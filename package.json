@@ -1,0 +1,24 @@
+{
+  "name": "mcq-site_final",
+  "version": "1.0.0",
+  "main": "expl.js",
+  "scripts": {
+    "build": "netlify deploy--prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "canvas": "^3.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "jspdf": "^3.0.0",
+    "path": "^0.12.7",
+    "netlify-cli":"^18.14.0",
+    "netlify-lamba":"^2.0.15",
+    "serverless-http": "3.2.0"
+  }
+}

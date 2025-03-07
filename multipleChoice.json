@@ -1,0 +1,3005 @@
+[
+    {
+        "Question": "What is the correct syntax for selecting all columns from a table named 'employees'?",
+        "Options": [
+            "SELECT * FROM employees;",
+            "SELECT employees;",
+            "SELECT ALL FROM employees;",
+            "SELECT * WHERE employees;"
+        ],
+        "Correct Answer": "SELECT * FROM employees;",
+        "Explanation": "The correct syntax to select all columns from the 'employees' table is 'SELECT * FROM employees.'"
+    },
+    {
+        "Question": "Which SQL command is used to insert a new record into a table?",
+        "Options": [
+            "ADD RECORD INTO table_name;",
+            "INSERT INTO table_name VALUES (...);",
+            "INSERT NEW INTO table_name;",
+            "INSERT INTO VALUES table_name;"
+        ],
+        "Correct Answer": "INSERT INTO table_name VALUES (...);",
+        "Explanation": "The 'INSERT INTO table_name VALUES (...)' command is used to add new rows into a table."
+    },
+    {
+        "Question": "How would you update the salary of an employee with 'employee_id = 101' to '55000' in the 'employees' table?",
+        "Options": [
+            "UPDATE employees SET salary = 55000 WHERE employee_id = 101;",
+            "UPDATE employees SET salary = 55000 FOR employee_id = 101;",
+            "MODIFY employees SET salary = 55000 WHERE employee_id = 101;",
+            "UPDATE employees WHERE salary = 55000 AND employee_id = 101;"
+        ],
+        "Correct Answer": "UPDATE employees SET salary = 55000 WHERE employee_id = 101;",
+        "Explanation": "The correct command is 'UPDATE employees SET salary = 55000 WHERE employee_id = 101' to update the specific record."
+    },
+    {
+        "Question": "Which SQL statement is used to delete a record from the 'employees' table?",
+        "Options": [
+            "DELETE FROM employees WHERE employee_id = 101;",
+            "REMOVE FROM employees WHERE employee_id = 101;",
+            "DELETE employee_id = 101 FROM employees;",
+            "REMOVE employee_id = 101 FROM employees;"
+        ],
+        "Correct Answer": "DELETE FROM employees WHERE employee_id = 101;",
+        "Explanation": "The correct syntax is 'DELETE FROM employees WHERE employee_id = 101'."
+    },
+    {
+        "Question": "Which data type is used to store dates in Oracle SQL?",
+        "Options": [
+            "VARCHAR2",
+            "DATE",
+            "TIMESTAMP",
+            "TEXT"
+        ],
+        "Correct Answer": "DATE",
+        "Explanation": "The 'DATE' data type in Oracle stores date and time information."
+    },
+    {
+        "Question": "What type of join returns all rows when there is a match in one of the tables?",
+        "Options": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL OUTER JOIN"
+        ],
+        "Correct Answer": "FULL OUTER JOIN",
+        "Explanation": "A 'FULL OUTER JOIN' returns all records when there is a match in either left (table1) or right (table2)."
+    },
+    {
+        "Question": "What is the primary purpose of an index in Oracle SQL?",
+        "Options": [
+            "To store data efficiently",
+            "To optimize query performance",
+            "To create relationships between tables",
+            "To enforce data integrity"
+        ],
+        "Correct Answer": "To optimize query performance",
+        "Explanation": "An index is used to improve the speed of retrieval operations in a database."
+    },
+    {
+        "Question": "Which of the following is used to define a reusable block of code in Oracle SQL?",
+        "Options": [
+            "FUNCTION",
+            "PROCEDURE",
+            "PACKAGE",
+            "VIEW"
+        ],
+        "Correct Answer": "PROCEDURE",
+        "Explanation": "A 'PROCEDURE' is a stored block of code that can be reused in Oracle SQL."
+    },
+    {
+        "Question": "Which SQL command is used to commit a transaction in Oracle?",
+        "Options": [
+            "SAVE TRANSACTION;",
+            "COMMIT;",
+            "END TRANSACTION;",
+            "FINALIZE;"
+        ],
+        "Correct Answer": "COMMIT;",
+        "Explanation": "The 'COMMIT' command is used to save all changes made during the transaction."
+    },
+    {
+        "Question": "What is the purpose of a trigger in Oracle SQL?",
+        "Options": [
+            "To store a set of queries for future use",
+            "To automatically perform an action when certain events occur",
+            "To handle user access permissions",
+            "To speed up query execution"
+        ],
+        "Correct Answer": "To automatically perform an action when certain events occur",
+        "Explanation": "A trigger is a stored procedure that automatically performs an action based on a specified event such as an 'INSERT' 'UPDATE' or 'DELETE'."
+    },
+    {
+        "Question": "Which data type can store the maximum number of characters in Oracle?",
+        "Options": [
+            "VARCHAR2",
+            "NUMBER",
+            "CLOB",
+            "BLOB"
+        ],
+        "Correct Answer": "VARCHAR2",
+        "Explanation": "CLOB can store large amounts of text data and is used for storing large character data in Oracle."
+    },
+    {
+        "Question": "What is the default value of a column defined as NOT NULL?",
+        "Options": [
+            "Null",
+            0.0,
+            "Empty String",
+            "No Default"
+        ],
+        "Correct Answer": "Empty String",
+        "Explanation": "Columns defined as NOT NULL must always have a value and will not allow NULLs unless specified otherwise."
+    },
+    {
+        "Question": "What is a foreign key?",
+        "Options": [
+            "A primary key in another table",
+            "An index",
+            "Used to enforce data integrity",
+            "Used for query optimization"
+        ],
+        "Correct Answer": "A primary key in another table",
+        "Explanation": "Foreign keys are used to enforce relationships between tables by linking to the primary key of another table."
+    },
+    {
+        "Question": "Which clause is used to filter the results of a SELECT query?",
+        "Options": [
+            "WHERE",
+            "HAVING",
+            "ORDER BY",
+            "FILTER"
+        ],
+        "Correct Answer": "WHERE",
+        "Explanation": "The WHERE clause is used to filter records in a SELECT query."
+    },
+    {
+        "Question": "What does the SQL command 'ALTER TABLE' do?",
+        "Options": [
+            "Changes a table's structure",
+            "Deletes a table",
+            "Renames a table",
+            "Adds a new column"
+        ],
+        "Correct Answer": "Adds a new column",
+        "Explanation": "'ALTER TABLE' is used to modify an existing table such as adding a new column."
+    },
+    {
+        "Question": "Which of the following is NOT a valid data type in Oracle?",
+        "Options": [
+            "INTEGER",
+            "DATE",
+            "TIMESTAMP",
+            "BOOLEAN"
+        ],
+        "Correct Answer": "BOOLEAN",
+        "Explanation": "Oracle does not support a BOOLEAN data type. It uses number types for representing true/false."
+    },
+    {
+        "Question": "What is the purpose of a sequence in Oracle?",
+        "Options": [
+            "To generate unique numbers automatically",
+            "To store date values",
+            "To create a relationship between tables",
+            "To speed up query execution"
+        ],
+        "Correct Answer": "To generate unique numbers automatically",
+        "Explanation": "A sequence generates unique numeric values often used for primary keys."
+    },
+    {
+        "Question": "What is the SQL command to remove a table from the database?",
+        "Options": [
+            "REMOVE TABLE",
+            "DELETE TABLE",
+            "DROP TABLE",
+            "TRUNCATE TABLE"
+        ],
+        "Correct Answer": "DROP TABLE",
+        "Explanation": "DROP TABLE removes the table and all of its data permanently from the database."
+    },
+    {
+        "Question": "Which function returns the current date in Oracle SQL?",
+        "Options": [
+            "GETDATE()",
+            "CURRENT_DATE",
+            "NOW()",
+            "DATE()"
+        ],
+        "Correct Answer": "CURRENT_DATE",
+        "Explanation": "CURRENT_DATE returns the current date in Oracle SQL."
+    },
+    {
+        "Question": "What is a 'view' in Oracle?",
+        "Options": [
+            "A stored procedure",
+            "A temporary table",
+            "A virtual table",
+            "An index"
+        ],
+        "Correct Answer": "A virtual table",
+        "Explanation": "A view is a virtual table created by a SELECT query. It does not store data itself but displays data from one or more tables."
+    },
+    {
+        "Question": "Which command is used to modify data in a table?",
+        "Options": [
+            "UPDATE",
+            "INSERT",
+            "MODIFY",
+            "SELECT"
+        ],
+        "Correct Answer": "UPDATE",
+        "Explanation": "UPDATE is used to modify existing data in a table."
+    },
+    {
+        "Question": "Which of the following is a type of inner join?",
+        "Options": [
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "OUTER JOIN",
+            "EQUIJOIN"
+        ],
+        "Correct Answer": "EQUIJOIN",
+        "Explanation": "EQUIJOIN is an inner join that returns rows with matching values in both tables."
+    },
+    {
+        "Question": "Which of the following constraints ensures that all values in a column are unique?",
+        "Options": [
+            "PRIMARY KEY",
+            "UNIQUE",
+            "NOT NULL",
+            "FOREIGN KEY"
+        ],
+        "Correct Answer": "UNIQUE",
+        "Explanation": "The UNIQUE constraint ensures that all values in a column are distinct."
+    },
+    {
+        "Question": "Which of the following can be used to prevent duplicate rows from being inserted into a table?",
+        "Options": [
+            "PRIMARY KEY",
+            "UNIQUE",
+            "FOREIGN KEY",
+            "CHECK"
+        ],
+        "Correct Answer": "UNIQUE",
+        "Explanation": "The UNIQUE constraint ensures that duplicate rows cannot be inserted into a column."
+    },
+    {
+        "Question": "What does the 'HAVING' clause do in SQL?",
+        "Options": [
+            "Filters rows before grouping",
+            "Filters rows after grouping",
+            "Orders rows",
+            "Groups rows"
+        ],
+        "Correct Answer": "Filters rows after grouping",
+        "Explanation": "HAVING filters groups created by the GROUP BY clause."
+    },
+    {
+        "Question": "What is a synonym in Oracle?",
+        "Options": [
+            "An alias for a table or view",
+            "A stored procedure",
+            "A unique constraint",
+            "A type of join"
+        ],
+        "Correct Answer": "An alias for a table or view",
+        "Explanation": "A synonym provides an alias or shortcut to refer to another database object."
+    },
+    {
+        "Question": "Which function is used to get the number of rows returned by a query?",
+        "Options": [
+            "COUNT()",
+            "SUM()",
+            "AVG()",
+            "MAX()"
+        ],
+        "Correct Answer": "COUNT()",
+        "Explanation": "The COUNT() function returns the number of rows in a result set."
+    },
+    {
+        "Question": "What is the purpose of the 'DISTINCT' keyword in a SELECT statement?",
+        "Options": [
+            "To return only unique values",
+            "To select all rows",
+            "To filter NULL values",
+            "To count rows"
+        ],
+        "Correct Answer": "To return only unique values",
+        "Explanation": "DISTINCT is used to remove duplicate rows from the result set."
+    },
+    {
+        "Question": "Which keyword is used to sort results in SQL?",
+        "Options": [
+            "ORDER BY",
+            "FILTER",
+            "GROUP BY",
+            "SORT"
+        ],
+        "Correct Answer": "ORDER BY",
+        "Explanation": "ORDER BY is used to sort the results of a query based on one or more columns."
+    },
+    {
+        "Question": "What does a 'LEFT JOIN' do in SQL?",
+        "Options": [
+            "Returns all rows from the left table and matching rows from the right table",
+            "Returns all rows from the right table and matching rows from the left table",
+            "Returns matching rows from both tables",
+            "Returns rows with no matching records in the left table"
+        ],
+        "Correct Answer": "Returns all rows from the left table and matching rows from the right table",
+        "Explanation": "A LEFT JOIN returns all records from the left table and the matched records from the right table."
+    },
+    {
+        "Question": "How do you select unique values from a column in SQL?",
+        "Options": [
+            "SELECT UNIQUE",
+            "SELECT DISTINCT",
+            "SELECT ONLY",
+            "SELECT DIFFERENT"
+        ],
+        "Correct Answer": "SELECT DISTINCT",
+        "Explanation": "The DISTINCT keyword is used to select unique values from a column."
+    },
+    {
+        "Question": "Which clause is used to group rows based on a column?",
+        "Options": [
+            "ORDER BY",
+            "GROUP BY",
+            "HAVING",
+            "SELECT"
+        ],
+        "Correct Answer": "GROUP BY",
+        "Explanation": "GROUP BY groups rows that have the same values in specified columns."
+    },
+    {
+        "Question": "What is the purpose of 'RANK()' in Oracle SQL?",
+        "Options": [
+            "To rank rows based on their value",
+            "To count rows",
+            "To sort rows",
+            "To limit the number of rows"
+        ],
+        "Correct Answer": "To rank rows based on their value",
+        "Explanation": "RANK() assigns a unique rank to rows within a partition of a result set."
+    },
+    {
+        "Question": "Which of the following keywords is used to remove duplicates in the results?",
+        "Options": [
+            "DISTINCT",
+            "REMOVE",
+            "DELETE",
+            "DROP"
+        ],
+        "Correct Answer": "DISTINCT",
+        "Explanation": "DISTINCT removes duplicate records from the result set."
+    },
+    {
+        "Question": "Which of the following is a type of outer join?",
+        "Options": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL OUTER JOIN"
+        ],
+        "Correct Answer": "LEFT JOIN",
+        "Explanation": "A LEFT JOIN is a type of outer join."
+    },
+    {
+        "Question": "What does the 'SUM()' function do in SQL?",
+        "Options": [
+            "Adds up all values in a column",
+            "Returns the average of values in a column",
+            "Returns the maximum value in a column",
+            "Counts the number of rows"
+        ],
+        "Correct Answer": "Adds up all values in a column",
+        "Explanation": "SUM() adds up all values in a numeric column."
+    },
+    {
+        "Question": "Which SQL function is used to find the highest value in a column?",
+        "Options": [
+            "MAX()",
+            "MIN()",
+            "TOP()",
+            "HIGH()"
+        ],
+        "Correct Answer": "MAX()",
+        "Explanation": "The MAX() function returns the highest value in a specified column."
+    },
+    {
+        "Question": "What does the SQL keyword 'IS NULL' check for?",
+        "Options": [
+            "Empty string",
+            "Non-existent value",
+            "Zero",
+            "Null value"
+        ],
+        "Correct Answer": "Null value",
+        "Explanation": "'IS NULL' is used to check if a column contains a NULL value."
+    },
+    {
+        "Question": "Which clause is used to group rows that have the same values in a column?",
+        "Options": [
+            "ORDER BY",
+            "GROUP BY",
+            "HAVING",
+            "SELECT"
+        ],
+        "Correct Answer": "GROUP BY",
+        "Explanation": "GROUP BY groups rows based on the values in one or more columns."
+    },
+    {
+        "Question": "What is the maximum number of columns allowed in an Oracle table?",
+        "Options": [
+            1000.0,
+            1024.0,
+            100.0,
+            255.0
+        ],
+        "Correct Answer": 1024.0,
+        "Explanation": "Oracle allows up to 1024 columns in a single table."
+    },
+    {
+        "Question": "Which keyword is used to specify an alternative value in a SELECT statement if a value is NULL?",
+        "Options": [
+            "NVL()",
+            "COALESCE()",
+            "ISNULL()",
+            "IFNULL()"
+        ],
+        "Correct Answer": "NVL()",
+        "Explanation": "NVL() is used to replace NULL values with a specified value."
+    },
+    {
+        "Question": "Which type of join returns only the rows where there is a match in both tables?",
+        "Options": [
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL OUTER JOIN",
+            "INNER JOIN"
+        ],
+        "Correct Answer": "INNER JOIN",
+        "Explanation": "An INNER JOIN returns only the rows that have matching values in both tables."
+    },
+    {
+        "Question": "What is the default sorting order for an 'ORDER BY' clause?",
+        "Options": [
+            "Descending",
+            "Ascending",
+            "No default order",
+            "Random"
+        ],
+        "Correct Answer": "Ascending",
+        "Explanation": "The default order for 'ORDER BY' is ascending."
+    },
+    {
+        "Question": "What does the 'TRUNCATE' command do in SQL?",
+        "Options": [
+            "Removes a table from the database",
+            "Removes all rows from a table",
+            "Deletes specific rows from a table",
+            "Resets the structure of a table"
+        ],
+        "Correct Answer": "Removes all rows from a table",
+        "Explanation": "TRUNCATE removes all rows from a table but keeps the structure intact."
+    },
+    {
+        "Question": "Which of the following commands is used to remove all records from a table without removing the table itself?",
+        "Options": [
+            "DROP TABLE",
+            "DELETE TABLE",
+            "TRUNCATE TABLE",
+            "REMOVE TABLE"
+        ],
+        "Correct Answer": "TRUNCATE TABLE",
+        "Explanation": "TRUNCATE TABLE removes all rows from a table without affecting its structure."
+    },
+    {
+        "Question": "Which of the following clauses is used to filter records based on conditions in an aggregate function?",
+        "Options": [
+            "HAVING",
+            "WHERE",
+            "ORDER BY",
+            "FILTER"
+        ],
+        "Correct Answer": "HAVING",
+        "Explanation": "HAVING is used to filter records after applying aggregate functions like SUM, COUNT, etc."
+    },
+    {
+        "Question": "What is the purpose of the 'ORDER BY' clause in SQL?",
+        "Options": [
+            "To sort the result set",
+            "To filter results",
+            "To group rows",
+            "To limit the result set"
+        ],
+        "Correct Answer": "To sort the result set",
+        "Explanation": "'ORDER BY' sorts the result set based on one or more columns."
+    },
+    {
+        "Question": "Which function is used to return the current timestamp in Oracle?",
+        "Options": [
+            "SYSDATE",
+            "CURRENT_DATE",
+            "CURRENT_TIMESTAMP",
+            "GETDATE()"
+        ],
+        "Correct Answer": "CURRENT_TIMESTAMP",
+        "Explanation": "CURRENT_TIMESTAMP returns the current date and time including the time zone in Oracle."
+    },
+    {
+        "Question": "Which of the following is a valid datatype for storing large binary data in Oracle?",
+        "Options": [
+            "VARCHAR2",
+            "CLOB",
+            "BLOB",
+            "TEXT"
+        ],
+        "Correct Answer": "CLOB",
+        "Explanation": "BLOB is used to store large binary data such as images or multimedia."
+    },
+    {
+        "Question": "Which of the following data types are used to store numbers with decimal points?",
+        "Options": [
+            "NUMBER",
+            "FLOAT",
+            "INTEGER",
+            "DECIMAL"
+        ],
+        "Correct Answer": "NUMBER",
+        "Explanation": "The NUMBER data type is used to store numbers with decimal points in Oracle."
+    },
+    {
+        "Question": "What is the correct syntax for deleting all rows in a table named 'employees'?",
+        "Options": [
+            "DELETE employees;",
+            "DELETE FROM employees;",
+            "REMOVE ALL FROM employees;",
+            "TRUNCATE employees;"
+        ],
+        "Correct Answer": "DELETE FROM employees;",
+        "Explanation": "DELETE FROM employees deletes all rows from the 'employees' table without removing its structure."
+    },
+    {
+        "Question": "Which of the following is used to create a unique constraint on a column?",
+        "Options": [
+            "PRIMARY KEY",
+            "UNIQUE",
+            "FOREIGN KEY",
+            "NOT NULL"
+        ],
+        "Correct Answer": "UNIQUE",
+        "Explanation": "The UNIQUE constraint ensures all values in a column are unique."
+    },
+    {
+        "Question": "What does the 'DISTINCT' keyword do in a SELECT query?",
+        "Options": [
+            "Filters NULL values",
+            "Removes duplicate values",
+            "Orders the result set",
+            "Filters empty values"
+        ],
+        "Correct Answer": "Removes duplicate values",
+        "Explanation": "DISTINCT removes duplicate values from the result set."
+    },
+    {
+        "Question": "What is the purpose of the 'CONCAT()' function in SQL?",
+        "Options": [
+            "To combine multiple rows into one",
+            "To combine two or more strings into one string",
+            "To count the number of characters in a string",
+            "To calculate the length of a string"
+        ],
+        "Correct Answer": "To combine two or more strings into one string",
+        "Explanation": "The 'CONCAT()' function is used to combine two or more strings into one."
+    },
+    {
+        "Question": "Which of the following is NOT a valid comparison operator in SQL?",
+        "Options": [
+            "=",
+            "<>",
+            "!=",
+            "LIKE"
+        ],
+        "Correct Answer": "LIKE",
+        "Explanation": "!= is not a valid operator in SQL. Use '<>' or '=' for equality comparison."
+    },
+    {
+        "Question": "Which clause in SQL is used to return only distinct rows?",
+        "Options": [
+            "DISTINCT",
+            "ONLY",
+            "NO DUPLICATES",
+            "EXCEPT"
+        ],
+        "Correct Answer": "DISTINCT",
+        "Explanation": "DISTINCT removes duplicate rows and returns only unique results."
+    },
+    {
+        "Question": "What is the correct syntax for adding a new column to an existing table?",
+        "Options": [
+            "ALTER TABLE table_name ADD column_name datatype;",
+            "ALTER TABLE table_name MODIFY column_name datatype;",
+            "ADD COLUMN table_name column_name datatype;",
+            "MODIFY TABLE table_name ADD column_name datatype;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name ADD column_name datatype;",
+        "Explanation": "ALTER TABLE table_name ADD column_name datatype is used to add a new column to an existing table."
+    },
+    {
+        "Question": "Which of the following operators is used to compare a column value to a range of values?",
+        "Options": [
+            "IN",
+            "LIKE",
+            "BETWEEN",
+            "ALL"
+        ],
+        "Correct Answer": "IN",
+        "Explanation": "The 'IN' operator is used to check if a value matches any value in a list."
+    },
+    {
+        "Question": "Which of the following types of joins returns all rows from both tables?",
+        "Options": [
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "INNER JOIN",
+            "FULL OUTER JOIN"
+        ],
+        "Correct Answer": "FULL OUTER JOIN",
+        "Explanation": "FULL OUTER JOIN returns all rows from both tables regardless of whether there is a match."
+    },
+    {
+        "Question": "What does the 'WHERE' clause do in SQL?",
+        "Options": [
+            "Groups rows based on specified columns",
+            "Filters rows based on a condition",
+            "Sorts the rows",
+            "Orders the rows"
+        ],
+        "Correct Answer": "Filters rows based on a condition",
+        "Explanation": "The WHERE clause filters rows based on specified conditions."
+    },
+    {
+        "Question": "What is the default value of the 'NVL()' function in Oracle?",
+        "Options": [
+            0.0,
+            "Empty string",
+            "NULL",
+            "Blank space"
+        ],
+        "Correct Answer": "NULL",
+        "Explanation": "NVL() replaces NULL with a specified value. The default value is NULL."
+    },
+    {
+        "Question": "Which command is used to rename a column in a table?",
+        "Options": [
+            "ALTER COLUMN",
+            "RENAME COLUMN",
+            "MODIFY COLUMN",
+            "CHANGE COLUMN"
+        ],
+        "Correct Answer": "RENAME COLUMN",
+        "Explanation": "The correct syntax to rename a column is 'RENAME COLUMN'."
+    },
+    {
+        "Question": "Which clause is used to eliminate duplicate rows from a SELECT statement?",
+        "Options": [
+            "WHERE",
+            "DISTINCT",
+            "UNIQUE",
+            "REMOVE"
+        ],
+        "Correct Answer": "DISTINCT",
+        "Explanation": "DISTINCT removes duplicate rows from the result set."
+    },
+    {
+        "Question": "What is the correct syntax to drop a column from a table?",
+        "Options": [
+            "ALTER TABLE table_name DROP COLUMN column_name;",
+            "DELETE COLUMN FROM table_name column_name;",
+            "DROP COLUMN FROM table_name column_name;",
+            "ALTER TABLE table_name REMOVE COLUMN column_name;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name DROP COLUMN column_name;",
+        "Explanation": "ALTER TABLE table_name DROP COLUMN column_name is used to remove a column from a table."
+    },
+    {
+        "Question": "Which of the following statements is true regarding a 'LEFT JOIN'?",
+        "Options": [
+            "It returns matching rows and NULL values for non-matching rows from the right table",
+            "It returns only matching rows",
+            "It returns all rows from the right table",
+            "It returns matching rows and NULL values for non-matching rows from the left table"
+        ],
+        "Correct Answer": "It returns matching rows and NULL values for non-matching rows from the right table",
+        "Explanation": "A LEFT JOIN returns all records from the left table and matching records from the right table. Non-matching rows from the right table are shown as NULL."
+    },
+    {
+        "Question": "Which SQL function is used to get the length of a string?",
+        "Options": [
+            "LENGTH()",
+            "LEN()",
+            "STRING_LENGTH()",
+            "SIZE()"
+        ],
+        "Correct Answer": "LENGTH()",
+        "Explanation": "LENGTH() returns the number of characters in a string."
+    },
+    {
+        "Question": "What is a 'PRIMARY KEY' constraint used for?",
+        "Options": [
+            "To ensure all values in a column are unique",
+            "To define a relationship between tables",
+            "To uniquely identify each record in a table",
+            "To prevent NULL values in a column"
+        ],
+        "Correct Answer": "To uniquely identify each record in a table",
+        "Explanation": "PRIMARY KEY uniquely identifies each record in a table and ensures no duplicates."
+    },
+    {
+        "Question": "What is the correct syntax for selecting all employees whose name starts with 'A'?",
+        "Options": [
+            "SELECT * FROM employees WHERE name LIKE 'A%';",
+            "SELECT * FROM employees WHERE name = 'A%';",
+            "SELECT * FROM employees WHERE name START WITH 'A';",
+            "SELECT * FROM employees WHERE name LIKE 'A';"
+        ],
+        "Correct Answer": "SELECT * FROM employees WHERE name LIKE 'A%';",
+        "Explanation": "'LIKE' is used to filter values based on a specified pattern. '%A' matches any string starting with 'A'."
+    },
+    {
+        "Question": "What is the correct syntax for combining two SELECT statements in SQL?",
+        "Options": [
+            "SELECT * FROM table1 UNION SELECT * FROM table2;",
+            "SELECT * FROM table1 COMBINE SELECT * FROM table2;",
+            "SELECT * FROM table1 APPEND SELECT * FROM table2;",
+            "SELECT * FROM table1 JOIN SELECT * FROM table2;"
+        ],
+        "Correct Answer": "SELECT * FROM table1 UNION SELECT * FROM table2;",
+        "Explanation": "The 'UNION' operator combines the result sets of two SELECT statements."
+    },
+    {
+        "Question": "Which SQL clause is used to order the results of a query?",
+        "Options": [
+            "GROUP BY",
+            "HAVING",
+            "ORDER BY",
+            "FILTER"
+        ],
+        "Correct Answer": "ORDER BY",
+        "Explanation": "ORDER BY is used to sort the result set in ascending or descending order."
+    },
+    {
+        "Question": "Which of the following functions is used to round a numeric value to a specified decimal place?",
+        "Options": [
+            "ROUND()",
+            "FLOOR()",
+            "CEIL()",
+            "TRUNC()"
+        ],
+        "Correct Answer": "ROUND()",
+        "Explanation": "ROUND() is used to round a numeric value to a specified number of decimal places."
+    },
+    {
+        "Question": "Which SQL clause is used to filter records after grouping?",
+        "Options": [
+            "WHERE",
+            "HAVING",
+            "ORDER BY",
+            "FILTER"
+        ],
+        "Correct Answer": "HAVING",
+        "Explanation": "HAVING is used to filter records after they have been grouped using the GROUP BY clause."
+    },
+    {
+        "Question": "Which function is used to calculate the number of rows in a group?",
+        "Options": [
+            "COUNT()",
+            "SUM()",
+            "AVG()",
+            "MAX()"
+        ],
+        "Correct Answer": "COUNT()",
+        "Explanation": "COUNT() returns the number of rows in a group or table."
+    },
+    {
+        "Question": "What is the default date format in Oracle?",
+        "Options": [
+            "YYYY-MM-DD",
+            "DD-MM-YYYY",
+            "MM-DD-YYYY",
+            "DD-MMM-YYYY"
+        ],
+        "Correct Answer": "DD-MMM-YYYY",
+        "Explanation": "The default date format in Oracle is 'DD-MMM-YYYY'."
+    },
+    {
+        "Question": "What is the purpose of a 'COMMIT' statement?",
+        "Options": [
+            "To discard changes made in a transaction",
+            "To confirm changes made during a transaction",
+            "To start a new transaction",
+            "To pause a transaction"
+        ],
+        "Correct Answer": "To confirm changes made during a transaction",
+        "Explanation": "COMMIT is used to save all changes made in a transaction and make them permanent."
+    },
+    {
+        "Question": "Which of the following is true about 'INNER JOIN'?",
+        "Options": [
+            "It returns only matching rows from both tables",
+            "It returns all rows from the left table",
+            "It returns all rows from the right table",
+            "It returns unmatched rows as NULL"
+        ],
+        "Correct Answer": "It returns only matching rows from both tables",
+        "Explanation": "INNER JOIN returns rows where there is a match between both tables."
+    },
+    {
+        "Question": "Which of the following is used to handle NULL values in SQL?",
+        "Options": [
+            "NVL()",
+            "COALESCE()",
+            "ISNULL()",
+            "ALL"
+        ],
+        "Correct Answer": "NVL()",
+        "Explanation": "The NVL() function replaces NULL values with a specified value in Oracle SQL."
+    },
+    {
+        "Question": "Which type of join returns rows even if there is no match in the right table?",
+        "Options": [
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "INNER JOIN",
+            "FULL OUTER JOIN"
+        ],
+        "Correct Answer": "LEFT JOIN",
+        "Explanation": "LEFT JOIN returns all rows from the left table and matching rows from the right table, with NULL for non-matching rows."
+    },
+    {
+        "Question": "Which function in SQL is used to convert a string to uppercase?",
+        "Options": [
+            "UPPER()",
+            "LOWER()",
+            "CONCAT()",
+            "TO_CHAR()"
+        ],
+        "Correct Answer": "UPPER()",
+        "Explanation": "UPPER() is used to convert a string to uppercase in SQL."
+    },
+    {
+        "Question": "What does the 'BETWEEN' operator do in SQL?",
+        "Options": [
+            "Checks if a value is within a range",
+            "Checks if a value is equal to a specific value",
+            "Checks if a value starts with a specific character",
+            "Checks if a value is less than a given value"
+        ],
+        "Correct Answer": "Checks if a value is within a range",
+        "Explanation": "BETWEEN is used to filter records that fall within a range of values."
+    },
+    {
+        "Question": "Which command is used to modify the structure of an existing table?",
+        "Options": [
+            "UPDATE TABLE",
+            "ALTER TABLE",
+            "MODIFY TABLE",
+            "CHANGE TABLE"
+        ],
+        "Correct Answer": "ALTER TABLE",
+        "Explanation": "ALTER TABLE is used to modify the structure of an existing table, such as adding or dropping columns."
+    },
+    {
+        "Question": "Which of the following functions is used to extract a substring from a string?",
+        "Options": [
+            "SUBSTR()",
+            "EXTRACT()",
+            "MID()",
+            "SPLIT()"
+        ],
+        "Correct Answer": "SUBSTR()",
+        "Explanation": "SUBSTR() extracts a substring from a string in Oracle SQL."
+    },
+    {
+        "Question": "Which SQL function is used to get the current system date?",
+        "Options": [
+            "SYSDATE",
+            "CURRENT_DATE",
+            "NOW()",
+            "GETDATE()"
+        ],
+        "Correct Answer": "SYSDATE",
+        "Explanation": "SYSDATE returns the current system date and time in Oracle SQL."
+    },
+    {
+        "Question": "What is the purpose of the 'DISTINCT' keyword?",
+        "Options": [
+            "To remove duplicates from the result set",
+            "To sort the result set",
+            "To limit the number of rows",
+            "To filter NULL values"
+        ],
+        "Correct Answer": "To remove duplicates from the result set",
+        "Explanation": "DISTINCT is used to remove duplicate values from the result set."
+    },
+    {
+        "Question": "Which of the following keywords is used to define a constraint in SQL?",
+        "Options": [
+            "CONSTRAINT",
+            "DEFINE",
+            "RESTRICT",
+            "CHECK"
+        ],
+        "Correct Answer": "CONSTRAINT",
+        "Explanation": "CONSTRAINT is used to define rules to enforce data integrity in a table."
+    },
+    {
+        "Question": "Which type of join returns all rows from the right table and matching rows from the left table?",
+        "Options": [
+            "RIGHT JOIN",
+            "LEFT JOIN",
+            "INNER JOIN",
+            "FULL OUTER JOIN"
+        ],
+        "Correct Answer": "RIGHT JOIN",
+        "Explanation": "RIGHT JOIN returns all rows from the right table and the matching rows from the left table."
+    },
+    {
+        "Question": "Which function is used to get the largest value in a column?",
+        "Options": [
+            "MAX()",
+            "MIN()",
+            "AVG()",
+            "COUNT()"
+        ],
+        "Correct Answer": "MAX()",
+        "Explanation": "MAX() returns the largest value in a specified column."
+    },
+    {
+        "Question": "What is the purpose of the 'IS NULL' condition in SQL?",
+        "Options": [
+            "To check for empty strings",
+            "To check for NULL values",
+            "To check for negative numbers",
+            "To check for zero values"
+        ],
+        "Correct Answer": "To check for NULL values",
+        "Explanation": "'IS NULL' is used to check if a column contains a NULL value."
+    },
+    {
+        "Question": "Which of the following is true about 'RIGHT JOIN'?",
+        "Options": [
+            "It returns all rows from the right table and matching rows from the left table",
+            "It returns all rows from the left table and matching rows from the right table",
+            "It returns only matching rows from both tables",
+            "It returns only rows with NULL values"
+        ],
+        "Correct Answer": "It returns all rows from the right table and matching rows from the left table",
+        "Explanation": "RIGHT JOIN returns all rows from the right table and matching rows from the left table."
+    },
+    {
+        "Question": "Which SQL function is used to find the length of a string?",
+        "Options": [
+            "LEN()",
+            "SIZE()",
+            "LENGTH()",
+            "CHAR_LENGTH()"
+        ],
+        "Correct Answer": "LENGTH()",
+        "Explanation": "LENGTH() returns the number of characters in a string."
+    },
+    {
+        "Question": "Which of the following SQL statements is used to change the datatype of a column?",
+        "Options": [
+            "ALTER TABLE MODIFY COLUMN",
+            "ALTER COLUMN",
+            "MODIFY COLUMN",
+            "CHANGE COLUMN"
+        ],
+        "Correct Answer": "ALTER TABLE MODIFY COLUMN",
+        "Explanation": "ALTER TABLE MODIFY COLUMN is used to change the datatype or properties of a column."
+    },
+    {
+        "Question": "Which command is used to create a table in Oracle?",
+        "Options": [
+            "CREATE TABLE table_name;",
+            "CREATE NEW TABLE table_name;",
+            "INSERT INTO table_name;",
+            "MAKE TABLE table_name;"
+        ],
+        "Correct Answer": "CREATE TABLE table_name;",
+        "Explanation": "CREATE TABLE is used to create a new table in Oracle SQL."
+    },
+    {
+        "Question": "What is the purpose of a 'VIEW' in SQL?",
+        "Options": [
+            "To store data",
+            "To display data based on a query",
+            "To delete data",
+            "To update data"
+        ],
+        "Correct Answer": "To display data based on a query",
+        "Explanation": "A view is a virtual table that displays data based on a query but does not store data itself."
+    },
+    {
+        "Question": "Which function in SQL returns the current date and time?",
+        "Options": [
+            "CURRENT_TIMESTAMP",
+            "SYSDATE",
+            "CURRENT_DATE",
+            "NOW()"
+        ],
+        "Correct Answer": "CURRENT_TIMESTAMP",
+        "Explanation": "CURRENT_TIMESTAMP returns the current date and time along with time zone information."
+    },
+    {
+        "Question": "Which clause is used to group rows in SQL?",
+        "Options": [
+            "GROUP BY",
+            "ORDER BY",
+            "HAVING",
+            "SELECT"
+        ],
+        "Correct Answer": "GROUP BY",
+        "Explanation": "GROUP BY is used to group rows that have the same values in specified columns."
+    },
+    {
+        "Question": "Which of the following is NOT a valid aggregate function in SQL?",
+        "Options": [
+            "SUM()",
+            "COUNT()",
+            "AVERAGE()",
+            "MIN()"
+        ],
+        "Correct Answer": "AVERAGE()",
+        "Explanation": "There is no aggregate function named AVERAGE(). The correct function is AVG()."
+    },
+    {
+        "Question": "What is the default sorting order for the 'ORDER BY' clause?",
+        "Options": [
+            "Descending",
+            "Ascending",
+            "No default order",
+            "Random"
+        ],
+        "Correct Answer": "Ascending",
+        "Explanation": "By default, the ORDER BY clause sorts results in ascending order."
+    },
+    {
+        "Question": "Which keyword is used to combine the result of two SELECT statements?",
+        "Options": [
+            "UNION",
+            "JOIN",
+            "MERGE",
+            "INTERSECT"
+        ],
+        "Correct Answer": "UNION",
+        "Explanation": "UNION is used to combine the results of two SELECT statements and remove duplicates."
+    },
+    {
+        "Question": "What is a 'FOREIGN KEY' in SQL?",
+        "Options": [
+            "A key used to uniquely identify a record in a table",
+            "A key used to create relationships between tables",
+            "A key used to ensure no duplicate values in a column",
+            "A key used to store date values"
+        ],
+        "Correct Answer": "A key used to create relationships between tables",
+        "Explanation": "Foreign keys are used to establish and enforce relationships between tables by linking to the primary key of another table."
+    },
+    {
+        "Question": "What is the correct syntax to change the data type of a column?",
+        "Options": [
+            "ALTER TABLE table_name MODIFY column_name new_data_type;",
+            "UPDATE TABLE table_name MODIFY column_name new_data_type;",
+            "ALTER COLUMN table_name CHANGE column_name new_data_type;",
+            "CHANGE TABLE table_name ALTER column_name new_data_type;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name MODIFY column_name new_data_type;",
+        "Explanation": "ALTER TABLE table_name MODIFY column_name new_data_type is used to change a column's data type."
+    },
+    {
+        "Question": "Which SQL function is used to replace NULL values with a specified value?",
+        "Options": [
+            "COALESCE()",
+            "ISNULL()",
+            "NVL()",
+            "IFNULL()"
+        ],
+        "Correct Answer": "NVL()",
+        "Explanation": "NVL() replaces NULL values with the specified value in Oracle SQL."
+    },
+    {
+        "Question": "Which of the following is the correct syntax to remove a table from the database?",
+        "Options": [
+            "DROP TABLE table_name;",
+            "DELETE TABLE table_name;",
+            "REMOVE TABLE table_name;",
+            "TRUNCATE TABLE table_name;"
+        ],
+        "Correct Answer": "DROP TABLE table_name;",
+        "Explanation": "DROP TABLE is used to remove a table from the database permanently."
+    },
+    {
+        "Question": "What is the purpose of a 'TRANSACTION' in SQL?",
+        "Options": [
+            "To handle user permissions",
+            "To group multiple queries into a single unit of work",
+            "To store results of a query",
+            "To display data from multiple tables"
+        ],
+        "Correct Answer": "To group multiple queries into a single unit of work",
+        "Explanation": "Transactions allow you to execute multiple queries as a single unit of work, ensuring all or none of the changes are applied."
+    },
+    {
+        "Question": "Which function is used to calculate the total sum of a numeric column?",
+        "Options": [
+            "SUM()",
+            "COUNT()",
+            "AVG()",
+            "MAX()"
+        ],
+        "Correct Answer": "SUM()",
+        "Explanation": "SUM() is used to calculate the total sum of numeric values in a column."
+    },
+    {
+        "Question": "What is the maximum number of rows allowed in an Oracle table?",
+        "Options": [
+            "No limit",
+            65535.0,
+            1000000.0,
+            "Unlimited"
+        ],
+        "Correct Answer": "No limit",
+        "Explanation": "There is no explicit limit for the number of rows in an Oracle table."
+    },
+    {
+        "Question": "Which of the following functions is used to find the smallest value in a column?",
+        "Options": [
+            "MIN()",
+            "MAX()",
+            "SUM()",
+            "COUNT()"
+        ],
+        "Correct Answer": "MIN()",
+        "Explanation": "MIN() returns the smallest value in a specified column."
+    },
+    {
+        "Question": "Which type of relationship is represented by a foreign key?",
+        "Options": [
+            "One-to-one relationship",
+            "One-to-many relationship",
+            "Many-to-many relationship",
+            "Self-referencing relationship"
+        ],
+        "Correct Answer": "One-to-many relationship",
+        "Explanation": "A foreign key establishes a one-to-many relationship between two tables."
+    },
+    {
+        "Question": "Which function in SQL is used to find the average value of a column?",
+        "Options": [
+            "AVG()",
+            "COUNT()",
+            "SUM()",
+            "MAX()"
+        ],
+        "Correct Answer": "AVG()",
+        "Explanation": "The AVG() function returns the average value of a numeric column."
+    },
+    {
+        "Question": "What is the purpose of the 'ROLLBACK' statement?",
+        "Options": [
+            "To discard changes made during a transaction",
+            "To save changes permanently",
+            "To start a new transaction",
+            "To pause a transaction"
+        ],
+        "Correct Answer": "To discard changes made during a transaction",
+        "Explanation": "ROLLBACK is used to undo changes made during a transaction and restore the previous state."
+    },
+    {
+        "Question": "Which SQL clause is used to filter records based on a condition?",
+        "Options": [
+            "HAVING",
+            "WHERE",
+            "ORDER BY",
+            "FILTER"
+        ],
+        "Correct Answer": "WHERE",
+        "Explanation": "WHERE is used to filter records based on a specific condition in SQL."
+    },
+    {
+        "Question": "Which of the following is used to combine the result of two SELECT statements while including duplicates?",
+        "Options": [
+            "UNION ALL",
+            "UNION",
+            "INTERSECT",
+            "JOIN"
+        ],
+        "Correct Answer": "UNION ALL",
+        "Explanation": "UNION ALL combines the results of two SELECT statements and includes duplicates."
+    },
+    {
+        "Question": "Which function is used to calculate the total number of non-NULL values in a column?",
+        "Options": [
+            "COUNT()",
+            "SUM()",
+            "AVG()",
+            "MAX()"
+        ],
+        "Correct Answer": "COUNT()",
+        "Explanation": "COUNT() counts the number of non-NULL values in a column."
+    },
+    {
+        "Question": "What is the maximum number of columns in an Oracle table?",
+        "Options": [
+            1024.0,
+            1000.0,
+            500.0,
+            255.0
+        ],
+        "Correct Answer": 1024.0,
+        "Explanation": "An Oracle table can have a maximum of 1024 columns."
+    },
+    {
+        "Question": "Which of the following statements is true about 'FULL OUTER JOIN'?",
+        "Options": [
+            "It returns all rows from both tables",
+            "It returns only matching rows from both tables",
+            "It returns rows with matching values in one table",
+            "It returns only rows with NULL values"
+        ],
+        "Correct Answer": "It returns all rows from both tables",
+        "Explanation": "FULL OUTER JOIN returns all rows from both tables, including non-matching rows, with NULLs where there is no match."
+    },
+    {
+        "Question": "What does the 'IN' operator do in SQL?",
+        "Options": [
+            "Checks if a value matches any value in a list",
+            "Checks if a value is between two values",
+            "Checks if a value is equal to a specific value",
+            "Checks if a value is NULL"
+        ],
+        "Correct Answer": "Checks if a value matches any value in a list",
+        "Explanation": "The 'IN' operator is used to check if a value matches any value in a list."
+    },
+    {
+        "Question": "What is the purpose of the 'TRIGGER' in SQL?",
+        "Options": [
+            "To automatically execute a set of actions based on an event",
+            "To store complex queries for later use",
+            "To optimize query performance",
+            "To filter rows based on a condition"
+        ],
+        "Correct Answer": "To automatically execute a set of actions based on an event",
+        "Explanation": "Triggers are used to automatically execute a predefined set of actions when certain events occur in the database."
+    },
+    {
+        "Question": "Which of the following is the correct syntax to add a new row to a table?",
+        "Options": [
+            "INSERT INTO table_name VALUES(...);",
+            "ADD ROW TO table_name VALUES(...);",
+            "INSERT ROW INTO table_name (...);",
+            "INSERT INTO table_name (...);"
+        ],
+        "Correct Answer": "INSERT INTO table_name VALUES(...);",
+        "Explanation": "INSERT INTO table_name VALUES(...) is used to add new rows to a table in SQL."
+    },
+    {
+        "Question": "Which function is used to get the current system time in Oracle?",
+        "Options": [
+            "SYSDATE",
+            "CURRENT_TIME",
+            "CURRENT_TIMESTAMP",
+            "GETDATE()"
+        ],
+        "Correct Answer": "CURRENT_TIME",
+        "Explanation": "CURRENT_TIME returns the current system time without the date in Oracle SQL."
+    },
+    {
+        "Question": "What does the 'IS NOT NULL' condition do in SQL?",
+        "Options": [
+            "Checks if a column has a NULL value",
+            "Checks if a column does not have a NULL value",
+            "Checks if a column has a specific value",
+            "Checks if a column is empty"
+        ],
+        "Correct Answer": "Checks if a column does not have a NULL value",
+        "Explanation": "'IS NOT NULL' is used to check if a column does not contain a NULL value."
+    },
+    {
+        "Question": "Which of the following is the correct syntax to remove a record from a table?",
+        "Options": [
+            "DELETE FROM table_name WHERE condition;",
+            "REMOVE RECORD FROM table_name WHERE condition;",
+            "DROP FROM table_name WHERE condition;",
+            "DELETE TABLE table_name WHERE condition;"
+        ],
+        "Correct Answer": "DELETE FROM table_name WHERE condition;",
+        "Explanation": "DELETE FROM table_name WHERE condition; is used to remove records from a table."
+    },
+    {
+        "Question": "Which function is used to concatenate two or more strings?",
+        "Options": [
+            "CONCAT()",
+            "JOIN()",
+            "MERGE()",
+            "COMBINE()"
+        ],
+        "Correct Answer": "CONCAT()",
+        "Explanation": "CONCAT() is used to concatenate two or more strings into a single string."
+    },
+    {
+        "Question": "Which SQL statement is used to remove duplicates from the result of a SELECT query?",
+        "Options": [
+            "SELECT DISTINCT",
+            "SELECT ONLY",
+            "SELECT UNIQUE",
+            "SELECT REMOVE"
+        ],
+        "Correct Answer": "SELECT DISTINCT",
+        "Explanation": "SELECT DISTINCT is used to eliminate duplicate rows from the result set."
+    },
+    {
+        "Question": "What does the 'GROUP BY' clause do in SQL?",
+        "Options": [
+            "Groups rows based on one or more columns",
+            "Orders rows based on one or more columns",
+            "Filters rows based on a condition",
+            "Summarizes data by column values"
+        ],
+        "Correct Answer": "Groups rows based on one or more columns",
+        "Explanation": "GROUP BY is used to group rows that have the same values in specified columns."
+    },
+    {
+        "Question": "Which SQL function is used to round a number to the nearest integer?",
+        "Options": [
+            "ROUND()",
+            "CEIL()",
+            "FLOOR()",
+            "TRUNC()"
+        ],
+        "Correct Answer": "ROUND()",
+        "Explanation": "ROUND() rounds a number to the nearest integer based on the decimal part."
+    },
+    {
+        "Question": "Which statement is true about 'SELF JOIN'?",
+        "Options": [
+            "It joins a table with itself",
+            "It joins two different tables",
+            "It uses the 'UNION' operator",
+            "It creates multiple copies of the table"
+        ],
+        "Correct Answer": "It joins a table with itself",
+        "Explanation": "SELF JOIN is used to join a table with itself based on a related column."
+    },
+    {
+        "Question": "What is the correct syntax for updating an existing record in a table?",
+        "Options": [
+            "UPDATE table_name SET column_name = value WHERE condition;",
+            "CHANGE table_name SET column_name = value WHERE condition;",
+            "UPDATE table_name CHANGE column_name = value WHERE condition;",
+            "UPDATE table_name MODIFY column_name = value WHERE condition;"
+        ],
+        "Correct Answer": "UPDATE table_name SET column_name = value WHERE condition;",
+        "Explanation": "UPDATE table_name SET column_name = value WHERE condition; is used to modify an existing record."
+    },
+    {
+        "Question": "Which function is used to find the first occurrence of a substring in a string?",
+        "Options": [
+            "INSTR()",
+            "POSITION()",
+            "LOCATE()",
+            "SUBSTRING()"
+        ],
+        "Correct Answer": "INSTR()",
+        "Explanation": "INSTR() returns the position of the first occurrence of a substring in a string."
+    },
+    {
+        "Question": "Which SQL statement is used to remove a table from the database?",
+        "Options": [
+            "DROP TABLE table_name;",
+            "DELETE TABLE table_name;",
+            "REMOVE TABLE table_name;",
+            "TRUNCATE TABLE table_name;"
+        ],
+        "Correct Answer": "DROP TABLE table_name;",
+        "Explanation": "DROP TABLE table_name; is used to remove a table from the database."
+    },
+    {
+        "Question": "What is the purpose of the 'CHECK' constraint in SQL?",
+        "Options": [
+            "To enforce a condition on column values",
+            "To ensure all values in a column are unique",
+            "To define a foreign key relationship",
+            "To ensure the column does not accept NULL values"
+        ],
+        "Correct Answer": "To enforce a condition on column values",
+        "Explanation": "CHECK is used to enforce a condition on column values based on a specified expression."
+    },
+    {
+        "Question": "What is the correct syntax for using a subquery?",
+        "Options": [
+            "SELECT * FROM table_name WHERE column_name IN (SELECT column_name FROM another_table);",
+            "SELECT * FROM table_name IN (SELECT column_name FROM another_table);",
+            "SELECT * FROM table_name WHERE column_name IN SELECT column_name FROM another_table;",
+            "SELECT * FROM table_name WHERE column_name IN [SELECT column_name FROM another_table];"
+        ],
+        "Correct Answer": "SELECT * FROM table_name WHERE column_name IN (SELECT column_name FROM another_table);",
+        "Explanation": "A subquery is written inside parentheses and can be used in a WHERE clause."
+    },
+    {
+        "Question": "Which of the following is a valid data type for storing date and time values?",
+        "Options": [
+            "DATE",
+            "STRING",
+            "TIMESTAMP",
+            "CHAR"
+        ],
+        "Correct Answer": "STRING",
+        "Explanation": "TIMESTAMP is used to store both date and time values."
+    },
+    {
+        "Question": "Which SQL keyword is used to return only the first N rows of a result set?",
+        "Options": [
+            "LIMIT",
+            "FIRST",
+            "TOP",
+            "SELECT TOP"
+        ],
+        "Correct Answer": "LIMIT",
+        "Explanation": "SELECT TOP is used to limit the number of rows returned by a query in SQL."
+    },
+    {
+        "Question": "Which SQL operator is used to search for a specified pattern in a column?",
+        "Options": [
+            "LIKE",
+            "SEARCH",
+            "IN",
+            "CONTAINS"
+        ],
+        "Correct Answer": "LIKE",
+        "Explanation": "LIKE is used to search for a specified pattern in a column."
+    },
+    {
+        "Question": "What is the correct syntax to delete a specific row in a table?",
+        "Options": [
+            "DELETE FROM table_name WHERE condition;",
+            "REMOVE FROM table_name WHERE condition;",
+            "DROP FROM table_name WHERE condition;",
+            "TRUNCATE TABLE table_name WHERE condition;"
+        ],
+        "Correct Answer": "DELETE FROM table_name WHERE condition;",
+        "Explanation": "DELETE FROM table_name WHERE condition; is used to remove specific rows from a table."
+    },
+    {
+        "Question": "Which of the following is NOT a type of join in SQL?",
+        "Options": [
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "CROSS JOIN",
+            "INNER JOIN"
+        ],
+        "Correct Answer": "LEFT JOIN",
+        "Explanation": "ALL is not a type of join in SQL."
+    },
+    {
+        "Question": "What is the function of the 'HAVING' clause in SQL?",
+        "Options": [
+            "To filter records before grouping",
+            "To filter records after grouping",
+            "To sort records after grouping",
+            "To specify a range of values"
+        ],
+        "Correct Answer": "To filter records after grouping",
+        "Explanation": "HAVING is used to filter records after they have been grouped using GROUP BY."
+    },
+    {
+        "Question": "Which of the following is a valid constraint to ensure a column contains unique values?",
+        "Options": [
+            "UNIQUE",
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "NOT NULL"
+        ],
+        "Correct Answer": "UNIQUE",
+        "Explanation": "UNIQUE ensures that all values in a column are distinct."
+    },
+    {
+        "Question": "Which SQL command is used to create an index?",
+        "Options": [
+            "CREATE INDEX index_name ON table_name (column_name);",
+            "CREATE NEW INDEX index_name ON table_name (column_name);",
+            "INDEX table_name CREATE (column_name);",
+            "CREATE INDEX table_name (index_name) ON (column_name);"
+        ],
+        "Correct Answer": "CREATE INDEX index_name ON table_name (column_name);",
+        "Explanation": "CREATE INDEX index_name ON table_name (column_name); is used to create an index on a column in a table."
+    },
+    {
+        "Question": "Which command is used to remove all rows from a table without removing the table structure?",
+        "Options": [
+            "DROP TABLE",
+            "DELETE TABLE",
+            "TRUNCATE TABLE",
+            "REMOVE TABLE"
+        ],
+        "Correct Answer": "TRUNCATE TABLE",
+        "Explanation": "TRUNCATE TABLE is used to remove all rows from a table but keep the table structure intact."
+    },
+    {
+        "Question": "Which SQL function is used to return the number of characters in a string?",
+        "Options": [
+            "LENGTH()",
+            "SIZE()",
+            "LEN()",
+            "CHAR_LENGTH()"
+        ],
+        "Correct Answer": "LENGTH()",
+        "Explanation": "LENGTH() returns the number of characters in a string."
+    },
+    {
+        "Question": "What is the purpose of the 'FOREIGN KEY' constraint in SQL?",
+        "Options": [
+            "To ensure values in a column are unique",
+            "To establish a link between two tables",
+            "To limit values in a column",
+            "To enforce NOT NULL values"
+        ],
+        "Correct Answer": "To establish a link between two tables",
+        "Explanation": "The FOREIGN KEY constraint is used to create a relationship between two tables."
+    },
+    {
+        "Question": "Which of the following is true about the 'DISTINCT' keyword?",
+        "Options": [
+            "It removes duplicate rows from the result set",
+            "It sorts the result set",
+            "It limits the number of rows",
+            "It only returns the first matching row"
+        ],
+        "Correct Answer": "It removes duplicate rows from the result set",
+        "Explanation": "DISTINCT removes duplicate rows from the result set."
+    },
+    {
+        "Question": "Which type of relationship is represented by a 'CROSS JOIN'?",
+        "Options": [
+            "One-to-one relationship",
+            "One-to-many relationship",
+            "Many-to-many relationship",
+            "Cartesian product"
+        ],
+        "Correct Answer": "Cartesian product",
+        "Explanation": "CROSS JOIN returns the Cartesian product of two tables, where every row from the first table is paired with every row from the second table."
+    },
+    {
+        "Question": "What does the 'LIKE' operator do in SQL?",
+        "Options": [
+            "Searches for a specified pattern in a column",
+            "Compares two values",
+            "Joins two tables",
+            "Checks if a column contains NULL values"
+        ],
+        "Correct Answer": "Searches for a specified pattern in a column",
+        "Explanation": "LIKE is used to search for a specified pattern within a column."
+    },
+    {
+        "Question": "Which of the following is true about 'NULL' in SQL?",
+        "Options": [
+            "NULL represents an unknown or missing value",
+            "NULL represents a zero value",
+            "NULL represents an empty string",
+            "NULL represents a negative value"
+        ],
+        "Correct Answer": "NULL represents an unknown or missing value",
+        "Explanation": "NULL represents an unknown or missing value in SQL."
+    },
+    {
+        "Question": "What is the default sorting order used by the 'ORDER BY' clause?",
+        "Options": [
+            "Descending",
+            "Ascending",
+            "No default order",
+            "Random"
+        ],
+        "Correct Answer": "Ascending",
+        "Explanation": "The default sorting order for the ORDER BY clause is ascending."
+    },
+    {
+        "Question": "Which of the following functions is used to get the absolute value of a number in SQL?",
+        "Options": [
+            "ABS()",
+            "SIGN()",
+            "MOD()",
+            "ROUND()"
+        ],
+        "Correct Answer": "ABS()",
+        "Explanation": "ABS() returns the absolute value of a number."
+    },
+    {
+        "Question": "Which SQL keyword is used to define a unique constraint on a column?",
+        "Options": [
+            "UNIQUE",
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "CHECK"
+        ],
+        "Correct Answer": "UNIQUE",
+        "Explanation": "UNIQUE is used to ensure that all values in a column are distinct."
+    },
+    {
+        "Question": "What does the 'AND' operator do in a SQL WHERE clause?",
+        "Options": [
+            "Combines two or more conditions to return true if all are true",
+            "Combines two or more conditions to return true if any are true",
+            "Filters rows based on a specific condition",
+            "Ensures that no NULL values exist"
+        ],
+        "Correct Answer": "Combines two or more conditions to return true if all are true",
+        "Explanation": "The 'AND' operator in a WHERE clause combines conditions that must all be true for the row to be included in the result set."
+    },
+    {
+        "Question": "Which of the following is true about the 'IN' operator in SQL?",
+        "Options": [
+            "It checks if a value matches any value in a list",
+            "It checks if a value is NULL",
+            "It checks if a value is greater than a specified value",
+            "It checks if a value matches all values in a list"
+        ],
+        "Correct Answer": "It checks if a value matches any value in a list",
+        "Explanation": "The 'IN' operator checks if a value is in a specified list of values."
+    },
+    {
+        "Question": "What is the purpose of the 'NOT' operator in SQL?",
+        "Options": [
+            "To negate a condition",
+            "To compare two values",
+            "To filter NULL values",
+            "To select a specific value"
+        ],
+        "Correct Answer": "To negate a condition",
+        "Explanation": "The 'NOT' operator is used to negate a condition in SQL."
+    },
+    {
+        "Question": "Which of the following is the correct syntax to update multiple columns in a table?",
+        "Options": [
+            "UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;",
+            "UPDATE table_name SET column1 = value1 AND column2 = value2 WHERE condition;",
+            "UPDATE table_name CHANGE column1 = value1 AND column2 = value2 WHERE condition;",
+            "UPDATE table_name SET column1 = value1; column2 = value2 WHERE condition;"
+        ],
+        "Correct Answer": "UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;",
+        "Explanation": "The correct syntax to update multiple columns is using a comma between column assignments."
+    },
+    {
+        "Question": "What is the purpose of a 'UNION ALL' operator in SQL?",
+        "Options": [
+            "To combine the result of two SELECT statements and include duplicates",
+            "To combine the result of two SELECT statements and remove duplicates",
+            "To find common records in two SELECT statements",
+            "To combine results from more than two tables"
+        ],
+        "Correct Answer": "To combine the result of two SELECT statements and include duplicates",
+        "Explanation": "UNION ALL is used to combine the results of two SELECT statements and includes duplicates."
+    },
+    {
+        "Question": "Which function in SQL is used to remove leading and trailing spaces from a string?",
+        "Options": [
+            "TRIM()",
+            "SUBSTRING()",
+            "CONCAT()",
+            "REPLACE()"
+        ],
+        "Correct Answer": "TRIM()",
+        "Explanation": "TRIM() is used to remove leading and trailing spaces from a string."
+    },
+    {
+        "Question": "What is the correct syntax to create a new table?",
+        "Options": [
+            "CREATE TABLE table_name (column1 datatype, column2 datatype, ...);",
+            "CREATE NEW TABLE table_name (column1 datatype, column2 datatype, ...);",
+            "INSERT INTO table_name (column1, column2, ...) VALUES (...);",
+            "CREATE TABLE table_name VALUES (column1 datatype, column2 datatype, ...);"
+        ],
+        "Correct Answer": "CREATE TABLE table_name (column1 datatype, column2 datatype, ...);",
+        "Explanation": "CREATE TABLE table_name (column1 datatype, column2 datatype, ...); is used to create a new table in SQL."
+    },
+    {
+        "Question": "Which of the following is true about the 'ORDER BY' clause?",
+        "Options": [
+            "It sorts the result set in ascending or descending order",
+            "It groups rows based on column values",
+            "It filters rows based on conditions",
+            "It eliminates duplicate rows"
+        ],
+        "Correct Answer": "It sorts the result set in ascending or descending order",
+        "Explanation": "ORDER BY is used to sort the result set in ascending or descending order."
+    },
+    {
+        "Question": "Which SQL function is used to find the last occurrence of a substring in a string?",
+        "Options": [
+            "INSTR()",
+            "POSITION()",
+            "LAST_INDEX_OF()",
+            "RPOS()"
+        ],
+        "Correct Answer": "LAST_INDEX_OF()",
+        "Explanation": "LAST_INDEX_OF() finds the position of the last occurrence of a substring in a string."
+    },
+    {
+        "Question": "What is the purpose of the 'TRUNCATE' statement in SQL?",
+        "Options": [
+            "To remove all rows from a table without removing the table structure",
+            "To delete all records from a table permanently",
+            "To drop a table from the database",
+            "To remove a column from a table"
+        ],
+        "Correct Answer": "To remove all rows from a table without removing the table structure",
+        "Explanation": "TRUNCATE removes all rows from a table but retains the table structure for future use."
+    },
+    {
+        "Question": "Which of the following is used to ensure that a column in a table cannot have NULL values?",
+        "Options": [
+            "NOT NULL",
+            "UNIQUE",
+            "PRIMARY KEY",
+            "CHECK"
+        ],
+        "Correct Answer": "NOT NULL",
+        "Explanation": "The NOT NULL constraint ensures that a column cannot contain NULL values."
+    },
+    {
+        "Question": "Which of the following is used to restrict the number of records returned by a query?",
+        "Options": [
+            "LIMIT",
+            "COUNT",
+            "MAX",
+            "FILTER"
+        ],
+        "Correct Answer": "LIMIT",
+        "Explanation": "LIMIT is used to restrict the number of rows returned by a query."
+    },
+    {
+        "Question": "Which keyword is used to specify a condition for filtering records after using GROUP BY?",
+        "Options": [
+            "HAVING",
+            "WHERE",
+            "ORDER BY",
+            "FILTER"
+        ],
+        "Correct Answer": "HAVING",
+        "Explanation": "HAVING is used to filter records after applying GROUP BY."
+    },
+    {
+        "Question": "What is the purpose of a 'PRIMARY KEY' constraint in SQL?",
+        "Options": [
+            "To ensure values in a column are unique and not NULL",
+            "To define a relationship between two tables",
+            "To ensure a column contains only positive numbers",
+            "To allow a column to store NULL values"
+        ],
+        "Correct Answer": "To ensure values in a column are unique and not NULL",
+        "Explanation": "PRIMARY KEY is used to uniquely identify each record in a table and cannot accept NULL values."
+    },
+    {
+        "Question": "Which function is used to convert a string to a date format in SQL?",
+        "Options": [
+            "TO_DATE()",
+            "DATE_FORMAT()",
+            "CONVERT_DATE()",
+            "STR_TO_DATE()"
+        ],
+        "Correct Answer": "TO_DATE()",
+        "Explanation": "TO_DATE() is used to convert a string into a date in SQL."
+    },
+    {
+        "Question": "Which of the following is used to change the value of a column in SQL?",
+        "Options": [
+            "UPDATE",
+            "MODIFY",
+            "CHANGE",
+            "ALTER"
+        ],
+        "Correct Answer": "UPDATE",
+        "Explanation": "UPDATE is used to change the value of a column in a record."
+    },
+    {
+        "Question": "What does the 'LIMIT' clause do in SQL?",
+        "Options": [
+            "Restricts the number of rows returned",
+            "Sorts the result set",
+            "Filters rows based on a condition",
+            "Groups rows based on values"
+        ],
+        "Correct Answer": "Restricts the number of rows returned",
+        "Explanation": "LIMIT is used to restrict the number of rows returned by a query in SQL."
+    },
+    {
+        "Question": "What is the correct syntax to drop a column from a table?",
+        "Options": [
+            "ALTER TABLE table_name DROP COLUMN column_name;",
+            "DELETE COLUMN column_name FROM table_name;",
+            "DROP COLUMN table_name column_name;",
+            "ALTER TABLE table_name REMOVE COLUMN column_name;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name DROP COLUMN column_name;",
+        "Explanation": "ALTER TABLE table_name DROP COLUMN column_name; is used to drop a column from a table."
+    },
+    {
+        "Question": "Which SQL function is used to convert a value to a specified data type?",
+        "Options": [
+            "CAST()",
+            "CONVERT()",
+            "TO_TYPE()",
+            "TYPE()"
+        ],
+        "Correct Answer": "CAST()",
+        "Explanation": "CAST() is used to convert a value from one data type to another in SQL."
+    },
+    {
+        "Question": "Which command is used to define a relationship between two tables in SQL?",
+        "Options": [
+            "FOREIGN KEY",
+            "PRIMARY KEY",
+            "CONSTRAINT",
+            "JOIN"
+        ],
+        "Correct Answer": "FOREIGN KEY",
+        "Explanation": "FOREIGN KEY is used to define a relationship between two tables by referencing the primary key of another table."
+    },
+    {
+        "Question": "Which of the following is used to specify the order in which records are returned in SQL?",
+        "Options": [
+            "ORDER BY",
+            "GROUP BY",
+            "WHERE",
+            "FILTER"
+        ],
+        "Correct Answer": "ORDER BY",
+        "Explanation": "ORDER BY is used to sort the result set based on one or more columns in ascending or descending order."
+    },
+    {
+        "Question": "Which SQL function is used to return the highest value in a column?",
+        "Options": [
+            "MAX()",
+            "MIN()",
+            "AVG()",
+            "COUNT()"
+        ],
+        "Correct Answer": "MAX()",
+        "Explanation": "MAX() returns the highest value in a specified column."
+    },
+    {
+        "Question": "Which SQL operator is used to combine multiple conditions in the WHERE clause?",
+        "Options": [
+            "OR",
+            "AND",
+            "NOT",
+            "IN"
+        ],
+        "Correct Answer": "AND",
+        "Explanation": "The 'AND' operator combines multiple conditions that must all be true in the WHERE clause."
+    },
+    {
+        "Question": "What is the correct syntax for removing all rows from a table?",
+        "Options": [
+            "DELETE FROM table_name;",
+            "TRUNCATE TABLE table_name;",
+            "DROP TABLE table_name;",
+            "REMOVE ALL FROM table_name;"
+        ],
+        "Correct Answer": "TRUNCATE TABLE table_name;",
+        "Explanation": "TRUNCATE TABLE removes all rows from a table but keeps the table structure intact."
+    },
+    {
+        "Question": "Which of the following is true about the 'DROP TABLE' command?",
+        "Options": [
+            "It deletes a table and its data from the database",
+            "It only deletes the table structure",
+            "It removes all rows without removing the table structure",
+            "It is used to remove a column from a table"
+        ],
+        "Correct Answer": "It deletes a table and its data from the database",
+        "Explanation": "DROP TABLE deletes both the table and its data permanently."
+    },
+    {
+        "Question": "Which of the following functions is used to replace a substring in a string?",
+        "Options": [
+            "REPLACE()",
+            "SUBSTRING()",
+            "CONCAT()",
+            "INSERT()"
+        ],
+        "Correct Answer": "REPLACE()",
+        "Explanation": "REPLACE() is used to replace occurrences of a substring within a string."
+    },
+    {
+        "Question": "Which SQL command is used to rename a table?",
+        "Options": [
+            "RENAME table_name TO new_table_name;",
+            "ALTER TABLE table_name RENAME TO new_table_name;",
+            "UPDATE table_name SET new_table_name;",
+            "CHANGE TABLE table_name TO new_table_name;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name RENAME TO new_table_name;",
+        "Explanation": "ALTER TABLE table_name RENAME TO new_table_name; is used to rename a table."
+    },
+    {
+        "Question": "What does the 'HAVING' clause do in SQL?",
+        "Options": [
+            "Filters records after grouping by a column",
+            "Filters records before grouping by a column",
+            "Orders the result set",
+            "Eliminates duplicates"
+        ],
+        "Correct Answer": "Filters records before grouping by a column",
+        "Explanation": "HAVING is used to filter records after they have been grouped using GROUP BY."
+    },
+    {
+        "Question": "Which keyword is used to select all columns in a table?",
+        "Options": [
+            "ALL",
+            "SELECT *",
+            "SELECT ALL",
+            "SELECT *"
+        ],
+        "Correct Answer": "ALL",
+        "Explanation": "SELECT * is used to select all columns from a table."
+    },
+    {
+        "Question": "Which of the following is true about the 'ALTER TABLE' command?",
+        "Options": [
+            "It is used to modify the structure of an existing table",
+            "It is used to delete rows from a table",
+            "It is used to rename a database",
+            "It is used to select data from a table"
+        ],
+        "Correct Answer": "It is used to modify the structure of an existing table",
+        "Explanation": "ALTER TABLE is used to modify the structure of an existing table, such as adding or removing columns."
+    },
+    {
+        "Question": "Which SQL command is used to remove a constraint from a table?",
+        "Options": [
+            "ALTER TABLE table_name DROP CONSTRAINT constraint_name;",
+            "DELETE CONSTRAINT constraint_name FROM table_name;",
+            "DROP CONSTRAINT table_name;",
+            "REMOVE CONSTRAINT FROM table_name;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name DROP CONSTRAINT constraint_name;",
+        "Explanation": "ALTER TABLE table_name DROP CONSTRAINT constraint_name; is used to remove a constraint from a table."
+    },
+    {
+        "Question": "What does the 'IS NULL' condition do in SQL?",
+        "Options": [
+            "Checks if a value is NULL",
+            "Checks if a value is equal to a specific value",
+            "Checks if a value is greater than a specified value",
+            "Checks if a value is within a range"
+        ],
+        "Correct Answer": "Checks if a value is NULL",
+        "Explanation": "IS NULL is used to check if a column contains NULL values."
+    },
+    {
+        "Question": "Which of the following is true about 'INNER JOIN'?",
+        "Options": [
+            "It returns only matching rows from both tables",
+            "It returns all rows from both tables",
+            "It returns all rows from the left table",
+            "It returns all rows from the right table"
+        ],
+        "Correct Answer": "It returns only matching rows from both tables",
+        "Explanation": "INNER JOIN returns only rows where there is a match in both tables."
+    },
+    {
+        "Question": "Which command is used to add a new column to an existing table?",
+        "Options": [
+            "ALTER TABLE table_name ADD column_name datatype;",
+            "INSERT INTO table_name (column_name) VALUES (...);",
+            "ADD COLUMN table_name (column_name datatype);",
+            "CREATE TABLE table_name ADD column_name datatype;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name ADD column_name datatype;",
+        "Explanation": "ALTER TABLE table_name ADD column_name datatype; is used to add a new column to an existing table."
+    },
+    {
+        "Question": "What is the purpose of the 'DISTINCT' keyword in SQL?",
+        "Options": [
+            "To eliminate duplicate rows from the result set",
+            "To sort the result set in ascending order",
+            "To filter the result set based on a condition",
+            "To join two tables"
+        ],
+        "Correct Answer": "To eliminate duplicate rows from the result set",
+        "Explanation": "DISTINCT removes duplicate rows from the result set."
+    },
+    {
+        "Question": "What does the 'BETWEEN' operator do in SQL?",
+        "Options": [
+            "Checks if a value lies within a specified range",
+            "Checks if a value matches any value in a list",
+            "Checks if a value is greater than or equal to a specified value",
+            "Checks if a value is NULL"
+        ],
+        "Correct Answer": "Checks if a value matches any value in a list",
+        "Explanation": "BETWEEN checks if a value is within a specified range of values."
+    },
+    {
+        "Question": "Which of the following SQL functions is used to extract a part of a string?",
+        "Options": [
+            "SUBSTRING()",
+            "CONCAT()",
+            "REPLACE()",
+            "TRIM()"
+        ],
+        "Correct Answer": "SUBSTRING()",
+        "Explanation": "SUBSTRING() is used to extract a substring from a string."
+    },
+    {
+        "Question": "What is the correct syntax to create a view in SQL?",
+        "Options": [
+            "CREATE VIEW view_name AS SELECT * FROM table_name;",
+            "VIEW CREATE view_name AS SELECT * FROM table_name;",
+            "CREATE TABLE view_name AS SELECT * FROM table_name;",
+            "SELECT * FROM table_name AS VIEW view_name;"
+        ],
+        "Correct Answer": "CREATE VIEW view_name AS SELECT * FROM table_name;",
+        "Explanation": "CREATE VIEW view_name AS SELECT * FROM table_name; is used to create a view."
+    },
+    {
+        "Question": "Which of the following is the correct syntax for using the 'EXISTS' operator?",
+        "Options": [
+            "SELECT * FROM table_name WHERE EXISTS (SELECT column_name FROM another_table);",
+            "SELECT * FROM table_name WHERE EXISTS SELECT column_name FROM another_table;",
+            "SELECT * FROM table_name WHERE EXISTS SELECT * FROM another_table;",
+            "SELECT * FROM table_name WHERE EXISTS [SELECT column_name FROM another_table];"
+        ],
+        "Correct Answer": "SELECT * FROM table_name WHERE EXISTS (SELECT column_name FROM another_table);",
+        "Explanation": "EXISTS is used to check if a subquery returns any result, and it returns TRUE if the subquery has results."
+    },
+    {
+        "Question": "What is the correct syntax to change the data type of a column?",
+        "Options": [
+            "ALTER TABLE table_name MODIFY column_name new_data_type;",
+            "CHANGE column_name TO new_data_type IN table_name;",
+            "ALTER COLUMN column_name SET data_type IN table_name;",
+            "ALTER TABLE table_name SET column_name TO data_type;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name MODIFY column_name new_data_type;",
+        "Explanation": "ALTER TABLE table_name MODIFY column_name new_data_type; is used to change the data type of a column in SQL."
+    },
+    {
+        "Question": "Which of the following is used to create a sequence in SQL?",
+        "Options": [
+            "CREATE SEQUENCE sequence_name START WITH value;",
+            "CREATE SEQUENCE sequence_name VALUE (start_with);",
+            "CREATE SEQUENCE sequence_name WITH START value;",
+            "SEQUENCE CREATE sequence_name BEGIN value;"
+        ],
+        "Correct Answer": "CREATE SEQUENCE sequence_name START WITH value;",
+        "Explanation": "CREATE SEQUENCE sequence_name START WITH value; is used to create a sequence in SQL."
+    },
+    {
+        "Question": "What is the maximum number of columns that a table can have in Oracle?",
+        "Options": [
+            1000.0,
+            255.0,
+            1024.0,
+            500.0
+        ],
+        "Correct Answer": 255.0,
+        "Explanation": "An Oracle table can have a maximum of 1000 columns."
+    },
+    {
+        "Question": "Which of the following is used to define a check constraint in SQL?",
+        "Options": [
+            "CHECK (condition)",
+            "CHECK (value)",
+            "CHECK CONSTRAINT (condition)",
+            "CONSTRAINT CHECK (condition)"
+        ],
+        "Correct Answer": "CHECK (condition)",
+        "Explanation": "CHECK (condition) is used to define a check constraint that ensures values meet a specified condition."
+    },
+    {
+        "Question": "Which SQL statement is used to modify a table's structure?",
+        "Options": [
+            "ALTER TABLE",
+            "UPDATE TABLE",
+            "DROP TABLE",
+            "CHANGE TABLE"
+        ],
+        "Correct Answer": "ALTER TABLE",
+        "Explanation": "ALTER TABLE is used to modify the structure of an existing table, such as adding or removing columns."
+    },
+    {
+        "Question": "What is the purpose of the 'CROSS JOIN' in SQL?",
+        "Options": [
+            "It returns the Cartesian product of two tables",
+            "It joins two tables based on a related column",
+            "It selects only matching rows",
+            "It combines the result of two SELECT statements"
+        ],
+        "Correct Answer": "It returns the Cartesian product of two tables",
+        "Explanation": "CROSS JOIN returns the Cartesian product of two tables, where every row from the first table is combined with every row from the second table."
+    },
+    {
+        "Question": "Which of the following is the correct syntax for using a subquery in SQL?",
+        "Options": [
+            "SELECT * FROM table_name WHERE column_name = (SELECT column_name FROM another_table);",
+            "SELECT * FROM table_name WHERE column_name = SELECT column_name FROM another_table;",
+            "SELECT * FROM table_name WHERE (SELECT column_name FROM another_table);",
+            "SELECT * FROM table_name WHERE column_name = [SELECT column_name FROM another_table];"
+        ],
+        "Correct Answer": "SELECT * FROM table_name WHERE column_name = (SELECT column_name FROM another_table);",
+        "Explanation": "A subquery is placed inside parentheses and can be used in a WHERE clause."
+    },
+    {
+        "Question": "What is the correct syntax to rename a column in Oracle?",
+        "Options": [
+            "ALTER TABLE table_name RENAME column_name TO new_column_name;",
+            "ALTER TABLE table_name CHANGE column_name TO new_column_name;",
+            "RENAME COLUMN table_name column_name TO new_column_name;",
+            "ALTER COLUMN table_name column_name TO new_column_name;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name RENAME column_name TO new_column_name;",
+        "Explanation": "ALTER TABLE table_name RENAME column_name TO new_column_name; is used to rename a column in Oracle SQL."
+    },
+    {
+        "Question": "Which of the following is used to change the structure of an existing table?",
+        "Options": [
+            "ALTER TABLE",
+            "UPDATE",
+            "SELECT",
+            "DELETE"
+        ],
+        "Correct Answer": "ALTER TABLE",
+        "Explanation": "ALTER TABLE is used to modify the structure of an existing table."
+    },
+    {
+        "Question": "Which SQL keyword is used to specify the table to be used in a query?",
+        "Options": [
+            "FROM",
+            "WHERE",
+            "SELECT",
+            "JOIN"
+        ],
+        "Correct Answer": "FROM",
+        "Explanation": "FROM specifies the table from which data is selected in a query."
+    },
+    {
+        "Question": "Which of the following SQL commands can be used to change a column's data type?",
+        "Options": [
+            "ALTER COLUMN",
+            "UPDATE COLUMN",
+            "ALTER TABLE",
+            "CHANGE COLUMN"
+        ],
+        "Correct Answer": "ALTER TABLE",
+        "Explanation": "ALTER TABLE allows modification of the structure of an existing table, including changing the data type."
+    },
+    {
+        "Question": "What is the purpose of the 'GROUP BY' clause in SQL?",
+        "Options": [
+            "To sort the result set",
+            "To filter records",
+            "To group records based on column values",
+            "To modify the table structure"
+        ],
+        "Correct Answer": "To group records based on column values",
+        "Explanation": "GROUP BY groups rows based on one or more columns."
+    },
+    {
+        "Question": "Which of the following is true about a 'PRIMARY KEY' constraint?",
+        "Options": [
+            "It can accept NULL values",
+            "It must be unique for each row",
+            "It allows duplicate values",
+            "It cannot be indexed"
+        ],
+        "Correct Answer": "It must be unique for each row",
+        "Explanation": "PRIMARY KEY must contain unique values and cannot accept NULL values."
+    },
+    {
+        "Question": "What is the result of a 'LEFT JOIN'?",
+        "Options": [
+            "It returns all rows from the right table",
+            "It returns all rows from the left table and matching rows from the right table",
+            "It returns only matching rows from both tables",
+            "It returns all rows from the left table and all matching rows from the right table"
+        ],
+        "Correct Answer": "It returns all rows from the left table and matching rows from the right table",
+        "Explanation": "LEFT JOIN returns all rows from the left table and matching rows from the right table."
+    },
+    {
+        "Question": "Which SQL statement is used to remove all records from a table?",
+        "Options": [
+            "DELETE",
+            "TRUNCATE",
+            "REMOVE",
+            "DROP"
+        ],
+        "Correct Answer": "TRUNCATE",
+        "Explanation": "TRUNCATE removes all records from the table without removing the table structure."
+    },
+    {
+        "Question": "Which clause is used to filter records before grouping?",
+        "Options": [
+            "HAVING",
+            "WHERE",
+            "ORDER BY",
+            "GROUP BY"
+        ],
+        "Correct Answer": "WHERE",
+        "Explanation": "WHERE is used to filter records before grouping them in SQL."
+    },
+    {
+        "Question": "What does the 'IN' operator do in SQL?",
+        "Options": [
+            "It checks if a value matches a list of values",
+            "It checks if a value is within a range",
+            "It checks if a value is NULL",
+            "It checks if a value is greater than or equal to another value"
+        ],
+        "Correct Answer": "It checks if a value matches a list of values",
+        "Explanation": "The 'IN' operator is used to check if a value matches any value in a list."
+    },
+    {
+        "Question": "Which of the following is used to add a new row to a table?",
+        "Options": [
+            "INSERT INTO",
+            "UPDATE",
+            "ALTER",
+            "DELETE"
+        ],
+        "Correct Answer": "INSERT INTO",
+        "Explanation": "INSERT INTO is used to add a new row to a table."
+    },
+    {
+        "Question": "Which of the following is true about the 'UNION' operator?",
+        "Options": [
+            "It combines the results of two SELECT queries and removes duplicates",
+            "It combines the results of two SELECT queries including duplicates",
+            "It is used to join tables",
+            "It filters the result set"
+        ],
+        "Correct Answer": "It combines the results of two SELECT queries and removes duplicates",
+        "Explanation": "The UNION operator combines results of two SELECT queries and removes duplicates."
+    },
+    {
+        "Question": "Which SQL function is used to find the number of rows in a result set?",
+        "Options": [
+            "COUNT()",
+            "MAX()",
+            "SUM()",
+            "AVG()"
+        ],
+        "Correct Answer": "COUNT()",
+        "Explanation": "COUNT() is used to find the number of rows in a result set."
+    },
+    {
+        "Question": "What is the correct syntax for creating a table in SQL?",
+        "Options": [
+            "CREATE TABLE table_name (column_name datatype);",
+            "CREATE table_name AS (column_name datatype);",
+            "CREATE TABLE column_name table_name (datatype);",
+            "CREATE (table_name) WITH column_name datatype;"
+        ],
+        "Correct Answer": "CREATE TABLE table_name (column_name datatype);",
+        "Explanation": "CREATE TABLE table_name (column_name datatype); is the correct syntax to create a table in SQL."
+    },
+    {
+        "Question": "What does the 'ORDER BY' clause do in SQL?",
+        "Options": [
+            "Sorts the result set in ascending order by default",
+            "Filters records",
+            "Groups rows based on column values",
+            "Joins tables"
+        ],
+        "Correct Answer": "Sorts the result set in ascending order by default",
+        "Explanation": "ORDER BY sorts the result set in ascending order by default unless otherwise specified."
+    },
+    {
+        "Question": "Which of the following is true about the 'INNER JOIN'?",
+        "Options": [
+            "It returns all rows from the left table",
+            "It returns only matching rows from both tables",
+            "It returns all rows from the right table",
+            "It returns all rows from both tables"
+        ],
+        "Correct Answer": "It returns only matching rows from both tables",
+        "Explanation": "INNER JOIN returns only rows where there is a match in both tables."
+    },
+    {
+        "Question": "Which SQL function is used to find the highest value in a column?",
+        "Options": [
+            "MAX()",
+            "MIN()",
+            "SUM()",
+            "AVG()"
+        ],
+        "Correct Answer": "MAX()",
+        "Explanation": "MAX() returns the highest value in a specified column."
+    },
+    {
+        "Question": "What does the 'TRUNCATE' command do?",
+        "Options": [
+            "It removes all rows from a table without removing the table structure",
+            "It removes the table structure",
+            "It removes a column from the table",
+            "It deletes a table"
+        ],
+        "Correct Answer": "It removes all rows from a table without removing the table structure",
+        "Explanation": "TRUNCATE removes all rows from a table but leaves the table structure intact."
+    },
+    {
+        "Question": "What is the correct way to update a value in an existing row?",
+        "Options": [
+            "UPDATE table_name SET column_name = new_value WHERE condition;",
+            "INSERT INTO table_name VALUES (...);",
+            "ALTER TABLE table_name ADD column_name datatype;",
+            "DELETE FROM table_name WHERE condition;"
+        ],
+        "Correct Answer": "UPDATE table_name SET column_name = new_value WHERE condition;",
+        "Explanation": "UPDATE is used to modify existing records in a table."
+    },
+    {
+        "Question": "Which of the following is used to create a sequence in SQL?",
+        "Options": [
+            "CREATE SEQUENCE sequence_name START WITH value;",
+            "CREATE TABLE sequence_name AS SELECT column_name FROM table_name;",
+            "CREATE SEQUENCE sequence_name VALUE (start_with);",
+            "CREATE SEQUENCE table_name value start;"
+        ],
+        "Correct Answer": "CREATE SEQUENCE sequence_name START WITH value;",
+        "Explanation": "CREATE SEQUENCE is used to generate a sequence of numbers in SQL."
+    },
+    {
+        "Question": "What is the function of the 'HAVING' clause?",
+        "Options": [
+            "It filters records before grouping",
+            "It filters records after grouping",
+            "It sorts records in the result set",
+            "It eliminates duplicates"
+        ],
+        "Correct Answer": "It filters records after grouping",
+        "Explanation": "HAVING is used to filter records after they have been grouped."
+    },
+    {
+        "Question": "Which operator is used to combine multiple conditions in SQL?",
+        "Options": [
+            "AND",
+            "OR",
+            "NOT",
+            "IN"
+        ],
+        "Correct Answer": "AND",
+        "Explanation": "The AND operator combines multiple conditions where all conditions must be true."
+    },
+    {
+        "Question": "Which of the following is true about the 'DROP TABLE' command?",
+        "Options": [
+            "It removes both the table and its data from the database",
+            "It removes only the data from the table",
+            "It removes only the table structure",
+            "It removes a column from the table"
+        ],
+        "Correct Answer": "It removes both the table and its data from the database",
+        "Explanation": "DROP TABLE removes both the table structure and the data."
+    },
+    {
+        "Question": "What is the correct syntax to add a new column to an existing table?",
+        "Options": [
+            "ALTER TABLE table_name ADD column_name datatype;",
+            "INSERT INTO table_name (column_name) VALUES (...);",
+            "ALTER TABLE table_name MODIFY column_name new_datatype;",
+            "UPDATE table_name SET column_name = new_value;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name ADD column_name datatype;",
+        "Explanation": "ALTER TABLE table_name ADD column_name datatype; adds a new column to an existing table."
+    },
+    {
+        "Question": "What is the correct syntax to delete a row from a table?",
+        "Options": [
+            "DELETE FROM table_name WHERE condition;",
+            "DELETE FROM table_name;",
+            "REMOVE FROM table_name WHERE condition;",
+            "DROP FROM table_name;"
+        ],
+        "Correct Answer": "DELETE FROM table_name WHERE condition;",
+        "Explanation": "DELETE removes a row based on the specified condition."
+    },
+    {
+        "Question": "What does the 'DISTINCT' keyword do in SQL?",
+        "Options": [
+            "It removes duplicates from the result set",
+            "It returns only the first record",
+            "It groups rows based on column values",
+            "It sorts the result set"
+        ],
+        "Correct Answer": "It removes duplicates from the result set",
+        "Explanation": "DISTINCT removes duplicate rows from the result set."
+    },
+    {
+        "Question": "Which operator is used to check if a value is NULL?",
+        "Options": [
+            "IS NULL",
+            "IS NOT NULL",
+            "IS",
+            "IS EMPTY"
+        ],
+        "Correct Answer": "IS NULL",
+        "Explanation": "IS NULL is used to check if a column contains NULL values."
+    },
+    {
+        "Question": "Which of the following SQL commands is used to remove a constraint from a table?",
+        "Options": [
+            "ALTER TABLE table_name DROP CONSTRAINT constraint_name;",
+            "DROP CONSTRAINT table_name;",
+            "REMOVE CONSTRAINT table_name;",
+            "ALTER TABLE table_name REMOVE CONSTRAINT constraint_name;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name DROP CONSTRAINT constraint_name;",
+        "Explanation": "ALTER TABLE table_name DROP CONSTRAINT constraint_name; removes a constraint."
+    },
+    {
+        "Question": "Which of the following is used to create a view in SQL?",
+        "Options": [
+            "CREATE VIEW view_name AS SELECT * FROM table_name;",
+            "VIEW CREATE view_name AS SELECT * FROM table_name;",
+            "CREATE VIEW table_name AS SELECT * FROM table_name;",
+            "SELECT * FROM table_name AS VIEW view_name;"
+        ],
+        "Correct Answer": "CREATE VIEW view_name AS SELECT * FROM table_name;",
+        "Explanation": "CREATE VIEW view_name AS SELECT * FROM table_name; creates a view."
+    },
+    {
+        "Question": "What is the correct way to add a foreign key constraint to a table?",
+        "Options": [
+            "ALTER TABLE table_name ADD CONSTRAINT fk_name FOREIGN KEY (column_name) REFERENCES other_table (column_name);",
+            "CREATE TABLE table_name FOREIGN KEY (column_name);",
+            "INSERT INTO table_name FOREIGN KEY (column_name);",
+            "ALTER TABLE table_name MODIFY COLUMN column_name REFERENCES other_table (column_name);"
+        ],
+        "Correct Answer": "ALTER TABLE table_name ADD CONSTRAINT fk_name FOREIGN KEY (column_name) REFERENCES other_table (column_name);",
+        "Explanation": "The correct syntax to add a foreign key constraint is by using ALTER TABLE with ADD CONSTRAINT."
+    },
+    {
+        "Question": "What does the 'COUNT' function do in SQL?",
+        "Options": [
+            "It returns the number of rows in a table",
+            "It returns the sum of values in a column",
+            "It returns the maximum value in a column",
+            "It returns the average value in a column"
+        ],
+        "Correct Answer": "It returns the number of rows in a table",
+        "Explanation": "COUNT returns the number of rows that match a specified condition."
+    },
+    {
+        "Question": "Which SQL function is used to extract a substring from a string?",
+        "Options": [
+            "SUBSTRING()",
+            "REPLACE()",
+            "CONCAT()",
+            "TRIM()"
+        ],
+        "Correct Answer": "SUBSTRING()",
+        "Explanation": "SUBSTRING() is used to extract a part of a string."
+    },
+    {
+        "Question": "Which of the following is true about the 'NOT LIKE' operator?",
+        "Options": [
+            "It returns values that do not match a pattern",
+            "It returns values that match a pattern",
+            "It is used to find records containing a NULL value",
+            "It filters out records with a specific column value"
+        ],
+        "Correct Answer": "It returns values that do not match a pattern",
+        "Explanation": "NOT LIKE is used to find records where the value does not match a given pattern."
+    },
+    {
+        "Question": "Which of the following is used to ensure a column's value is unique?",
+        "Options": [
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "UNIQUE constraint",
+            "NOT NULL"
+        ],
+        "Correct Answer": "UNIQUE constraint",
+        "Explanation": "UNIQUE constraint ensures that all values in a column are distinct."
+    },
+    {
+        "Question": "Which operator is used to combine the result sets of two SELECT queries?",
+        "Options": [
+            "UNION",
+            "INTERSECT",
+            "DISTINCT",
+            "JOIN"
+        ],
+        "Correct Answer": "UNION",
+        "Explanation": "UNION combines the result sets of two SELECT queries and removes duplicates."
+    },
+    {
+        "Question": "What is the function of the 'ISNULL' function in SQL?",
+        "Options": [
+            "It replaces NULL values with a specified value",
+            "It checks if a value is NULL",
+            "It returns the number of NULL values in a column",
+            "It removes NULL values from the result set"
+        ],
+        "Correct Answer": "It replaces NULL values with a specified value",
+        "Explanation": "ISNULL replaces NULL values with a specified value."
+    },
+    {
+        "Question": "What is the correct syntax to remove a column from a table?",
+        "Options": [
+            "ALTER TABLE table_name DROP COLUMN column_name;",
+            "DELETE COLUMN column_name FROM table_name;",
+            "DROP COLUMN table_name column_name;",
+            "REMOVE COLUMN table_name column_name;"
+        ],
+        "Correct Answer": "ALTER TABLE table_name DROP COLUMN column_name;",
+        "Explanation": "ALTER TABLE table_name DROP COLUMN column_name; removes a column from a table."
+    },
+    {
+        "Question": "Which of the following is true about the 'EXISTS' operator?",
+        "Options": [
+            "It checks if a subquery returns any result",
+            "It checks if a subquery returns no result",
+            "It is used to check if a column contains NULL values",
+            "It returns all values that match the condition"
+        ],
+        "Correct Answer": "It checks if a subquery returns any result",
+        "Explanation": "EXISTS checks if a subquery returns any results."
+    },
+    {
+        "Question": "Which of the following is true about the 'NOT' operator?",
+        "Options": [
+            "It reverses the logic of the condition it precedes",
+            "It combines multiple conditions",
+            "It checks if a value is equal to a specific value",
+            "It is used to eliminate duplicates"
+        ],
+        "Correct Answer": "It reverses the logic of the condition it precedes",
+        "Explanation": "The NOT operator reverses the logic of the condition it precedes."
+    },
+    {
+        "Question": "Which of the following is used to check the highest value in a column?",
+        "Options": [
+            "MAX()",
+            "MIN()",
+            "SUM()",
+            "COUNT()"
+        ],
+        "Correct Answer": "MAX()",
+        "Explanation": "MAX() returns the highest value in a specified column."
+    },
+    {
+        "Question": "Which of the following SQL statements can be used to create a table?",
+        "Options": [
+            "CREATE TABLE",
+            "ALTER TABLE",
+            "INSERT INTO",
+            "TRUNCATE"
+        ],
+        "Correct Answer": "CREATE TABLE",
+        "Explanation": "CREATE TABLE is used to create a table. ALTER TABLE is used to modify an existing table, INSERT INTO is for inserting data, and TRUNCATE deletes data."
+    },
+    {
+        "Question": "Which of the following SQL clauses can be used to filter records?",
+        "Options": [
+            "WHERE",
+            "HAVING",
+            "GROUP BY",
+            "ORDER BY"
+        ],
+        "Correct Answer": "WHERE",
+        "Explanation": "WHERE and HAVING can filter records, GROUP BY is used to group records, and ORDER BY is used to sort records."
+    },
+    {
+        "Question": "Which of the following are SQL aggregate functions?",
+        "Options": [
+            "SUM()",
+            "COUNT()",
+            "MAX()",
+            "AVG()"
+        ],
+        "Correct Answer": "SUM()",
+        "Explanation": "SUM(), COUNT(), MAX(), and AVG() are all aggregate functions."
+    },
+    {
+        "Question": "Which of the following are valid SQL join types?",
+        "Options": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "CROSS JOIN",
+            "SELF JOIN"
+        ],
+        "Correct Answer": "INNER JOIN",
+        "Explanation": "INNER JOIN, LEFT JOIN, CROSS JOIN, and SELF JOIN are valid SQL join types."
+    },
+    {
+        "Question": "Which of the following are valid constraints in SQL?",
+        "Options": [
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "NOT NULL",
+            "UNIQUE"
+        ],
+        "Correct Answer": "PRIMARY KEY",
+        "Explanation": "PRIMARY KEY, FOREIGN KEY, NOT NULL, and UNIQUE are all valid SQL constraints."
+    },
+    {
+        "Question": "Which of the following are valid SQL data types?",
+        "Options": [
+            "VARCHAR",
+            "DATE",
+            "BOOLEAN",
+            "NUMERIC"
+        ],
+        "Correct Answer": "VARCHAR",
+        "Explanation": "VARCHAR, DATE, BOOLEAN, and NUMERIC are valid SQL data types."
+    },
+    {
+        "Question": "Which SQL functions are used to manipulate strings?",
+        "Options": [
+            "CONCAT()",
+            "SUBSTRING()",
+            "REPLACE()",
+            "LENGTH()"
+        ],
+        "Correct Answer": "CONCAT()",
+        "Explanation": "CONCAT(), SUBSTRING(), REPLACE(), and LENGTH() are used to manipulate strings in SQL."
+    },
+    {
+        "Question": "Which of the following are SQL operators used for comparison?",
+        "Options": [
+            "=",
+            "<>",
+            ">",
+            "<=, >="
+        ],
+        "Correct Answer": "=",
+        "Explanation": "=, <>, >, <=, and >= are all valid comparison operators in SQL."
+    },
+    {
+        "Question": "Which SQL clauses can be used to sort data?",
+        "Options": [
+            "ORDER BY",
+            "GROUP BY",
+            "HAVING",
+            "WHERE"
+        ],
+        "Correct Answer": "ORDER BY",
+        "Explanation": "ORDER BY is used to sort data, GROUP BY groups data, HAVING filters groups, and WHERE filters rows."
+    },
+    {
+        "Question": "Which of the following SQL commands can be used to modify a table?",
+        "Options": [
+            "ALTER TABLE",
+            "UPDATE",
+            "DELETE",
+            "DROP"
+        ],
+        "Correct Answer": "ALTER TABLE",
+        "Explanation": "ALTER TABLE modifies the table structure, UPDATE changes the data, DELETE removes data, and DROP removes the table."
+    },
+    {
+        "Question": "Which of the following are valid types of SQL relationships?",
+        "Options": [
+            "One-to-One",
+            "One-to-Many",
+            "Many-to-Many",
+            "Many-to-One"
+        ],
+        "Correct Answer": "One-to-One",
+        "Explanation": "One-to-One, One-to-Many, and Many-to-Many are valid types of relationships between tables."
+    },
+    {
+        "Question": "Which of the following are valid SQL string functions?",
+        "Options": [
+            "CONCAT()",
+            "LENGTH()",
+            "REPLACE()",
+            "TRIM()"
+        ],
+        "Correct Answer": "CONCAT()",
+        "Explanation": "CONCAT(), LENGTH(), REPLACE(), and TRIM() are all valid SQL string functions."
+    },
+    {
+        "Question": "Which SQL command is used to remove data from a table?",
+        "Options": [
+            "DELETE",
+            "TRUNCATE",
+            "REMOVE",
+            "DROP"
+        ],
+        "Correct Answer": "DELETE",
+        "Explanation": "DELETE and TRUNCATE can be used to remove data, while REMOVE is not a valid SQL command."
+    },
+    {
+        "Question": "Which of the following SQL statements are used to define constraints?",
+        "Options": [
+            "CREATE TABLE",
+            "ALTER TABLE",
+            "ADD CONSTRAINT",
+            "CREATE CONSTRAINT"
+        ],
+        "Correct Answer": "CREATE TABLE",
+        "Explanation": "CREATE TABLE and ALTER TABLE can define constraints. ADD CONSTRAINT is used within ALTER TABLE to add a constraint."
+    },
+    {
+        "Question": "Which of the following are SQL clauses used to group data?",
+        "Options": [
+            "GROUP BY",
+            "HAVING",
+            "ORDER BY",
+            "WHERE"
+        ],
+        "Correct Answer": "GROUP BY",
+        "Explanation": "GROUP BY is used to group data. HAVING filters groups, ORDER BY sorts data, and WHERE filters rows."
+    },
+    {
+        "Question": "Which of the following are valid aggregate functions in SQL?",
+        "Options": [
+            "SUM()",
+            "COUNT()",
+            "AVG()",
+            "DISTINCT"
+        ],
+        "Correct Answer": "SUM()",
+        "Explanation": "SUM(), COUNT(), and AVG() are valid aggregate functions. DISTINCT is used to eliminate duplicates, not for aggregation."
+    },
+    {
+        "Question": "Which of the following can be used to modify the data in a table?",
+        "Options": [
+            "UPDATE",
+            "DELETE",
+            "INSERT INTO",
+            "ALTER"
+        ],
+        "Correct Answer": "UPDATE",
+        "Explanation": "UPDATE modifies existing data, DELETE removes data, INSERT INTO adds new data, and ALTER changes the structure."
+    },
+    {
+        "Question": "Which of the following SQL commands are used to modify a table structure?",
+        "Options": [
+            "ALTER TABLE",
+            "UPDATE",
+            "INSERT INTO",
+            "DROP"
+        ],
+        "Correct Answer": "ALTER TABLE",
+        "Explanation": "ALTER TABLE is used to modify the structure of a table. UPDATE changes data, INSERT INTO adds data, and DROP deletes the table."
+    },
+    {
+        "Question": "Which of the following are valid SQL numeric data types?",
+        "Options": [
+            "INT",
+            "FLOAT",
+            "DOUBLE",
+            "CHAR"
+        ],
+        "Correct Answer": "INT",
+        "Explanation": "INT, FLOAT, and DOUBLE are numeric data types in SQL. CHAR is a character data type."
+    },
+    {
+        "Question": "Which of the following SQL statements are used for joining tables?",
+        "Options": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "CROSS JOIN"
+        ],
+        "Correct Answer": "INNER JOIN",
+        "Explanation": "INNER JOIN, LEFT JOIN, RIGHT JOIN, and CROSS JOIN are all valid join types in SQL."
+    },
+    {
+        "Question": "Which of the following are used for pattern matching in SQL?",
+        "Options": [
+            "LIKE",
+            "NOT LIKE",
+            "REGEXP",
+            "IN"
+        ],
+        "Correct Answer": "LIKE",
+        "Explanation": "LIKE and NOT LIKE are used for pattern matching. REGEXP is also used in some SQL dialects for regular expressions, while IN checks for values in a list."
+    },
+    {
+        "Question": "Which of the following SQL commands are used to delete a table?",
+        "Options": [
+            "DROP TABLE",
+            "DELETE FROM",
+            "DROP COLUMN",
+            "TRUNCATE"
+        ],
+        "Correct Answer": "DROP TABLE",
+        "Explanation": "DROP TABLE is used to delete a table, DELETE removes data, DROP COLUMN removes a column, and TRUNCATE deletes all rows from a table."
+    },
+    {
+        "Question": "Which of the following are valid SQL data types for dates?",
+        "Options": [
+            "DATE",
+            "TIMESTAMP",
+            "TIME",
+            "CHAR"
+        ],
+        "Correct Answer": "DATE",
+        "Explanation": "DATE, TIMESTAMP, and TIME are valid SQL data types for handling date and time information. CHAR is a string data type."
+    },
+    {
+        "Question": "Which of the following SQL functions can be used to find the highest value in a column?",
+        "Options": [
+            "MAX()",
+            "COUNT()",
+            "SUM()",
+            "MIN()"
+        ],
+        "Correct Answer": "MAX()",
+        "Explanation": "MAX() returns the highest value in a specified column."
+    },
+    {
+        "Question": "Which of the following are correct ways to update a record in SQL?",
+        "Options": [
+            "UPDATE table_name SET column_name = value WHERE condition;",
+            "INSERT INTO table_name (column_name) VALUES (value);",
+            "DELETE FROM table_name WHERE condition;",
+            "ALTER TABLE table_name ADD column_name datatype;"
+        ],
+        "Correct Answer": "UPDATE table_name SET column_name = value WHERE condition;",
+        "Explanation": "UPDATE table_name SET column_name = value WHERE condition is correct to update a record. INSERT INTO adds records, DELETE removes records, ALTER TABLE adds a column."
+    },
+    {
+        "Question": "Which of the following can be used to enforce referential integrity in SQL?",
+        "Options": [
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "CHECK",
+            "UNIQUE"
+        ],
+        "Correct Answer": "PRIMARY KEY",
+        "Explanation": "PRIMARY KEY and FOREIGN KEY are used to enforce referential integrity between tables."
+    },
+    {
+        "Question": "Which of the following can be used to ensure no duplicate values in a column?",
+        "Options": [
+            "UNIQUE",
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "NOT NULL"
+        ],
+        "Correct Answer": "UNIQUE",
+        "Explanation": "UNIQUE and PRIMARY KEY ensure no duplicate values in a column."
+    },
+    {
+        "Question": "Which of the following can be used to calculate the total value in a column?",
+        "Options": [
+            "SUM()",
+            "COUNT()",
+            "MAX()",
+            "MIN()"
+        ],
+        "Correct Answer": "SUM()",
+        "Explanation": "SUM() calculates the total value of a numeric column."
+    },
+    {
+        "Question": "Which of the following are valid SQL comparison operators?",
+        "Options": [
+            "=",
+            "<>",
+            ">",
+            "<=, >="
+        ],
+        "Correct Answer": "=",
+        "Explanation": "=, <>, >, <=, and >= are valid comparison operators in SQL."
+    },
+    {
+        "Question": "Which of the following are valid SQL keywords?",
+        "Options": [
+            "SELECT",
+            "FROM",
+            "WHERE",
+            "UPDATE"
+        ],
+        "Correct Answer": "SELECT",
+        "Explanation": "SELECT, FROM, WHERE, and UPDATE are all valid SQL keywords."
+    },
+    {
+        "Question": "Which SQL function is used to return the current date and time?",
+        "Options": [
+            "NOW()",
+            "GETDATE()",
+            "CURRENT_TIMESTAMP",
+            "TODAY()"
+        ],
+        "Correct Answer": "NOW()",
+        "Explanation": "NOW(), GETDATE(), and CURRENT_TIMESTAMP return the current date and time in SQL."
+    },
+    {
+        "Question": "Which of the following SQL clauses can be used to exclude certain records?",
+        "Options": [
+            "WHERE",
+            "HAVING",
+            "EXCEPT",
+            "SELECT"
+        ],
+        "Correct Answer": "WHERE",
+        "Explanation": "WHERE and HAVING filter rows, and EXCEPT excludes records from the result set."
+    },
+    {
+        "Question": "Which of the following can be used to enforce that a value must not be NULL in a column?",
+        "Options": [
+            "NOT NULL",
+            "UNIQUE",
+            "FOREIGN KEY",
+            "PRIMARY KEY"
+        ],
+        "Correct Answer": "NOT NULL",
+        "Explanation": "NOT NULL enforces that a column must contain a value and cannot be NULL."
+    },
+    {
+        "Question": "Which SQL clause is used to return only unique records?",
+        "Options": [
+            "DISTINCT",
+            "SELECT",
+            "GROUP BY",
+            "ORDER BY"
+        ],
+        "Correct Answer": "DISTINCT",
+        "Explanation": "DISTINCT is used to return only unique records in a result set."
+    },
+    {
+        "Question": "Which of the following are valid SQL functions for working with numbers?",
+        "Options": [
+            "ABS()",
+            "ROUND()",
+            "CEIL()",
+            "FLOOR()"
+        ],
+        "Correct Answer": "ABS()",
+        "Explanation": "ABS(), ROUND(), CEIL(), and FLOOR() are used for numeric operations in SQL."
+    },
+    {
+        "Question": "Which of the following SQL commands are used to remove data from a table?",
+        "Options": [
+            "DELETE",
+            "TRUNCATE",
+            "DROP",
+            "REMOVE"
+        ],
+        "Correct Answer": "DELETE",
+        "Explanation": "DELETE and TRUNCATE are used to remove data, while DROP removes the entire table."
+    },
+    {
+        "Question": "Which of the following can be used to combine the results of two queries?",
+        "Options": [
+            "UNION",
+            "INTERSECT",
+            "JOIN",
+            "EXCEPT"
+        ],
+        "Correct Answer": "UNION",
+        "Explanation": "UNION and INTERSECT combine results from two queries. JOIN combines rows from two tables, and EXCEPT returns the difference between two result sets."
+    },
+    {
+        "Question": "Which of the following are used for handling transactions in SQL?",
+        "Options": [
+            "BEGIN TRANSACTION",
+            "COMMIT",
+            "ROLLBACK",
+            "SET TRANSACTION"
+        ],
+        "Correct Answer": "BEGIN TRANSACTION",
+        "Explanation": "BEGIN TRANSACTION starts a transaction, COMMIT saves changes, and ROLLBACK undoes changes."
+    },
+    {
+        "Question": "Which of the following are valid SQL operators for checking NULL values?",
+        "Options": [
+            "IS NULL",
+            "IS NOT NULL",
+            "NOT NULL",
+            "IN"
+        ],
+        "Correct Answer": "IS NULL",
+        "Explanation": "IS NULL and IS NOT NULL are used to check for NULL values."
+    }
+]
