@@ -1,0 +1,138 @@
+/* ✅ General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ✅ Navbar Styling */
+.navbar {
+    padding: 15px;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* ✅ Sidebar Styling */
+.sidebar {
+    background: #ffffff;
+    border-radius: 10px;
+    /* min-width: 250px;
+    max-width: 300px; */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.sidebar h4 {
+    margin-bottom: 15px;
+}
+
+/* ✅ Quiz Container Styling */
+.quiz-container {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.options .form-check {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-check-input:checked + .form-check-label {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+}
+
+/* ✅ Hide quiz container after submission */
+.submitted .quiz-container {
+    display: none;
+}
+
+/* ✅ Center Sidebar After Submission */
+
+.submitted .sidebar{
+    width: 100%;
+    
+}
+.submitted .sidebar #sidebar-certificate-btn{
+    width: fit-content;
+}
+/* ✅ Show result section below centered sidebar */
+.submitted #result-section {
+    display: block !important;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ✅ Button Styling */
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    /* font-weight: bold; */
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* ✅ Result Section */
+#result-section {
+    display: none; /* Initially hidden */
+    max-width: 600px;
+    margin: auto;
+}
+
+/* ✅ Footer Styling */
+footer {
+    background: #e9ecef;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+}
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container{
+        flex-direction: row;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .quiz-container, #result-section {
+        max-width: 100%;
+        width: 90%;
+    }
+
+}

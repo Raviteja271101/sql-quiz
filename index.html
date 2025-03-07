@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL MCQ Quiz</title>
+
+    <!-- ✅ Bootstrap for Styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
+    <!-- ✅ Include jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">SQL MCQ Quiz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 d-flex gap-3">
+        <!-- ✅ Sidebar for Quiz Progress -->
+        <div class="sidebar shadow p-3 ">
+            <h4 class="text-center">Quiz Progress</h4>
+            <p><strong>Attempted:</strong> <span id="attempted-count">0</span></p>
+            <p><strong>Remaining:</strong> <span id="remaining-count">0</span></p>
+            <p><strong><span id="timer" class="text-danger">Time Remaining: 0s</span></strong></p>
+            <button id="sidebar-certificate-btn" class="btn btn-success mt-3" style="display: none;">Download Certificate</button>
+        </div>
+        
+        <!-- ✅ Main Quiz Section -->
+        <div class="quiz-container flex-grow-1">
+            <h2 class="text-center">SQL MCQ Quiz</h2>
+            <hr>
+            <h4 id="question-text"></h4>
+            <div class="options" id="options"></div>
+            <div class="button-group text-center mt-3">
+                <button class="btn btn-outline-secondary" id="prev-btn" disabled>Previous</button>
+                <button class="btn btn-primary" id="next-btn">Next</button>
+                <button class="btn btn-danger" id="submit-btn" style="display: none;">Submit</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ✅ Result Section -->
+    <div id="result-section" class="container text-center mt-4 p-4 shadow rounded" style="display: none;">
+        <h2>Your Results</h2>
+        <p id="score-display">You scored 0 out of 5.</p>
+        <p id="percentage-display">Percentage: 0.00%</p>
+        <p id="status-display">Fail</p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <button id="show-explanation-btn" class="btn btn-primary">Show Explanation</button>
+            <button id="retry-quiz-btn" class="btn btn-success">Retry Quiz</button>
+        </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer class="text-center p-3 mt-4 bg-light">
+        &copy; 2025 MCQ Quiz Site. All rights reserved.
+    </footer>
+</body>
+</html>

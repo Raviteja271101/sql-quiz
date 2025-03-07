@@ -1,62 +1,56 @@
-let questions = [];
-        let selectedAnswers = [];
-        let currentIndex = 0;
+let questions = JSON.parse(localStorage.getItem("quizResults")) || [];
+let userAnswers = JSON.parse(localStorage.getItem("userAnswers")) || [];
+let currentQuestionIndex = 0;
 
-        function loadQuestions() {
-            questions = JSON.parse(localStorage.getItem("quizQuestions")) || [];
-            selectedAnswers = JSON.parse(localStorage.getItem("userAnswers")) || [];
-            showQuestion(0);
+function displayExplanation(index) {
+    let questionData = questions[index];
+    if (!questionData) return;
+
+    document.getElementById("question-text").textContent = `${index + 1}. ${questionData.Question}`;
+    let optionsContainer = document.getElementById("options-container");
+    optionsContainer.innerHTML = "";
+
+    let correctAnswer = questionData["Correct Answer"];
+    let userSelected = userAnswers[index];
+
+    questionData.Options.forEach(option => {
+        let optionClass = "";
+        if (option === correctAnswer) {
+            optionClass = "correct"; // ✅ Highlight correct answer in green
+        } else if (option === userSelected) {
+            optionClass = "incorrect"; // ❌ Highlight wrong selected answer in red
         }
 
-        function showQuestion(index) {
-            if (index < 0 || index >= questions.length) return;
-            
-            let question = questions[index];
-            let userSelected = selectedAnswers[index]; // Get user's selected answer
-            let correctAnswer = question["Correct Answer"];
-        
-            document.querySelector(".question").innerHTML = (index + 1) + ". " + question.Question;
-        
-            let optionsContainer = document.getElementById("options-container");
-            optionsContainer.innerHTML = ""; // Clear previous options
-        
-            ["A", "B", "C", "D"].forEach(letter => {
-                let option = document.createElement("div");
-                option.textContent = letter + ". " + question["Option " + letter];
-                option.classList.add("option");
-        
-                if (letter === correctAnswer) {
-                    option.classList.add("correct"); // ✅ Highlight correct answer in green
-                }
-                if (letter === userSelected && userSelected !== correctAnswer) {
-                    option.classList.add("incorrect"); // ❌ Highlight wrong selection in red
-                }
-        
-                optionsContainer.appendChild(option);
-            });
-        
-            // ✅ Show user's selected answer or "Not Attempted" if skipped
-            let userAnswerText = userSelected ? `Your Answer: ${question["Option " + userSelected]}` : "❌ Not Attempted";
-            document.getElementById("user-answer").innerHTML = `<strong>${userAnswerText}</strong>`;
-        
-            // ✅ Always show correct answer
-            document.getElementById("correct-answer").innerHTML = `<strong>✅ Correct Answer:</strong> ${question["Option " + correctAnswer]}`;
-        
-            // ✅ Show explanation
-            document.querySelector(".explanation").innerHTML = "ℹ Explanation: " + question.Explanation;
-        
-            currentIndex = index;
-        }
-        function nextQuestion() {
-            if (currentIndex < questions.length - 1) {
-                showQuestion(currentIndex + 1);
-            }
-        }
+        optionsContainer.innerHTML += `<p class="option ${optionClass}">${option}</p>`;
+    });
 
-        function prevQuestion() {
-            if (currentIndex > 0) {
-                showQuestion(currentIndex - 1);
-            }
-        }
+    let explanationText = questionData.Explanation ? `Explanation: ${questionData.Explanation}` : "No explanation available.";
+    document.getElementById("explanation-text").textContent = explanationText;
 
-        window.onload = loadQuestions;
+    if (userSelected) {
+        document.getElementById("user-attempt-text").textContent = `Your Answer: ${userSelected}`;
+    } else {
+        document.getElementById("user-attempt-text").innerHTML = `<span class="not-attempted">Not Attempted</span>`;
+    }
+
+    // ✅ Disable previous button on first question
+    document.getElementById("prev-btn").disabled = index === 0;
+    document.getElementById("next-btn").disabled = index === questions.length - 1;
+}
+
+document.getElementById("prev-btn").addEventListener("click", function () {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        displayExplanation(currentQuestionIndex);
+    }
+});
+
+document.getElementById("next-btn").addEventListener("click", function () {
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        displayExplanation(currentQuestionIndex);
+    }
+});
+
+// ✅ Load first question on page load
+displayExplanation(currentQuestionIndex);
